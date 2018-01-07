@@ -1,0 +1,53 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\newcommand{\laplace}[1]{\mathcal{L} \left\lbrace #1 \right\rbrace}
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 8}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+
+\begin{questions}
+
+\question[20]
+Recall that the Laplace transform of a function is
+\begin{align*}
+	\laplace{f(t)} = \int_0^{\infty} e^{-st} f(t) \> dt.
+\end{align*}
+Use the definition to find the transform of $f(t) = t-2e^{3t}$.
+\clearpage
+
+\end{questions}
+
+\end{document}

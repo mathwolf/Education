@@ -1,0 +1,174 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac, gensymb}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\newcommand{\real}{\mathbf{R}}
+
+\title{Linear algebra final exam fall 16}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Final exam}}
+            \hfill MAT 255, Fall 2016}
+\bigskip
+\bigskip
+
+\begin{questions}
+
+\question[10]
+Give precise definitions for \textbf{four} of the following five concepts.
+\begin{parts}
+\part
+linear independence of a set of vectors
+\part
+the span of a set of vectors
+\part
+the rank of a matrix
+\part
+an eigenvector of a matrix
+\part
+a pair of orthogonal vectors
+\end{parts}
+
+\question[15]
+Define the matrices $A = 
+\left[ \begin{array}{cc}
+2 & k \\ 0 & 3
+\end{array} \right]$
+and $B =
+\left[ \begin{array}{ccc}
+13 & 12 & 11 \\ 1 & 2 & 3
+\end{array}
+\right]$.
+
+\begin{parts}
+\part
+Find the matrix products $AB$ and $BA$, or state that the product is undefined.
+
+\part
+Find $A^{-1}$, the inverse of the matrix $A$.
+\end{parts}
+
+\question[10]
+Determine if each of the following sets is a basis for $\real^2$.  Explain the reasons for your conclusions.
+
+\begin{parts}
+\part
+$\left\lbrace \left[
+\begin{array}{c}
+-3 \\ 19 
+\end{array}
+\right], 
+\left[
+\begin{array}{c}
+12 \\ -5 
+\end{array}
+\right]
+\right\rbrace$
+
+\part
+$\left\lbrace \left[
+\begin{array}{c}
+2 \\ 4 
+\end{array}
+\right], 
+\left[
+\begin{array}{c}
+9 \\ 18 
+\end{array}
+\right]
+\right\rbrace$
+\end{parts}
+
+\question[7]
+One eigenvalue of the matrix $M =
+\left[ \begin{array}{ccc}
+1 & 2 & 1 \\ 3 & 6 & 3 \\ 4 & 8 & 4
+\end{array}
+\right]$
+is $\lambda = 11$.  Find an eigenvector corresponding to this value.
+
+\question[22]
+Let $A =
+\left[ \begin{array}{cc}
+7 & -3 \\ -2 & 6
+\end{array}
+\right]$.  
+
+\begin{parts}
+
+\part
+Find all eigenvalues of $A$.
+
+\part
+For every eigenvalue, find a corresponding eigenvector.
+
+\part
+Use your answers to write $A$ as the matrix product $PDP^{-1}$, where $D$ is a diagonal matrix. 
+
+\end{parts}
+
+\question[5]
+Find the length of the vector $\vec{u} = \left[ \begin{array}{c} -1 \\ 0 \\ 5 \\ 9 \end{array} \right]$.
+
+\question[5]
+Find the distance between the vectors 
+$\vec{v} = \left[ \begin{array}{c} 2 \\ 1 \\ -1  \end{array} \right]$ and 
+$\vec{w} = \left[ \begin{array}{c} -1 \\ 1 \\ 3 \end{array} \right]$. 
+
+\clearpage
+\question[8]
+Find a unit vector pointing in the direction of
+\begin{parts}
+\begin{multicols}{2}
+\part 
+$\vec{x} = \left[ \begin{array}{c} 5 \\ -9 \end{array} \right]$
+\part
+$\vec{y} = \left[ \begin{array}{c} 0 \\ 0 \\ 11 \end{array} \right]$
+\end{multicols}
+\end{parts}
+
+\question[6]
+Let $\alpha$ be a real number.  Give one example of a nonzero vector that is orthogonal to the vector
+$\vec{v} = \left[ \begin{array}{c} 5 \\ 1 \\ \alpha  \end{array} \right]$.
+
+\question
+\begin{parts}
+\part[12]
+Find a basis set for the columnspace and rowspace of the matrix
+\begin{equation*}
+	A = \left[ \begin{array}{ccccc}
+		5 & 2 & 7 \\
+		17 & 5 & 22 \\
+		13 & 7 & 20 \\
+	\end{array} \right].
+\end{equation*}
+
+\part
+10 points extra credit:
+\newline Use the Gram-Schmidt process to find an orthonormal basis for each of the two spaces that you found in part (a).
+
+\end{parts}
+
+
+\end{questions}
+
+\end{document}

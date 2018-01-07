@@ -1,0 +1,94 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 7A: Polynomials}}
+            \hfill Math 1110, Fall 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\begin{questions}
+
+\question
+Find $\left( x^3 + 7x^2 + 14x - 3 \right) \div \left( x + 2 \right)$.  Remember to include the remainder term in your answer, if needed.
+
+\clearpage
+
+\question
+Consider the rational function.
+\begin{align*}
+R(x) = \dfrac{2x^2 - 6x}{x^2 - 2x - 3}
+\end{align*}
+
+\begin{parts}
+\part 
+Analyze the ratio of leading terms to find the end behavior.  If the function has a horizontal asymptote or a slant asymptote, give its equation.
+
+\vspace{\stretch{2}}
+
+\part 
+Find the $x$-intercepts of the graph, if any.
+
+\vspace{\stretch{2}}
+
+\part 
+Find the equations for the vertical asymptotes, if any.
+
+\vspace{\stretch{2}}
+
+\part 
+Give the $x$-coordinates for any holes that you identify.
+
+\part
+Based on your work on the previous parts, give the $x-$ and $y$-coordinates for an appropriate selection of test points.
+
+\part
+Graph the function
+
+\vspace{\stretch{1}}
+\begin{center}
+\begin{asy}
+size(8cm);
+for (int i = -10; i <= 10; ++i)
+	{
+    draw((-10,i)--(10,i), mediumgray);
+    draw((i,-10)--(i,10), mediumgray);
+    }
+\end{asy}
+\end{center}
+\vspace{\stretch{1}}
+
+\end{parts}
+
+\end{questions}
+
+\end{document}

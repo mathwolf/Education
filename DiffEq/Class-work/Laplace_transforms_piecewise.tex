@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+
+\title{Worksheet template}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{gensymb, multicol, verbatim, enumitem, nicefrac}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\noindent {\sc {\bf {\Large Laplace transforms with piecewise functions}}}
+\bigskip
+\bigskip
+
+Use the Laplace transform to solve the following problems.
+
+\begin{enumerate}
+
+\item
+$x^{\prime \prime} + 4x = f(t), \> x(0) = 0, \> x^{\prime}(0) = 0$, where \newline
+$f(t) = \begin{cases}
+	\cos 2t & \mbox{if } 0 \le t < 2\pi \\
+    0 & \mbox{if } t \ge 2\pi.
+\end{cases}$
+
+\item
+$x^{\prime \prime} + 4x^{\prime} + 4x = f(t), \> x(0) = 0, \> x^{\prime}(0) = 0$, where \newline
+$f(t) = \begin{cases}
+	t & \mbox{if } 0 \le t < 2 \\
+    0 & \mbox{if } t \ge 2.
+\end{cases}$
+
+\end{enumerate}
+
+\bigskip
+
+\newpage
+
+ANSWERS
+
+\begin{enumerate}
+	\item $f(t) = \begin{cases}
+		\dfrac{1}{4} t \sin 2t & \mbox{if } 0 \le t < 2\pi \\
+    	\dfrac{1}{2} \pi \sin 2t & \mbox{if } t \ge 2\pi
+	\end{cases}$
+
+	\item $f(t) = \begin{cases}
+		- \dfrac{1}{4} + \dfrac{t}{4} + \dfrac{t+1}{4} e^{-2t} & \mbox{if } 0 \le t < 2 \\
+    	\dfrac{t+1}{4} e^{-2t} + \dfrac{3t-5}{4} e^{-2(t-2)} & \mbox{if } t \ge 2
+	\end{cases}$
+
+\end{enumerate}
+
+\end{document}

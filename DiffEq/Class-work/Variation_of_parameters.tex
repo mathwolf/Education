@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+
+\title{Worksheet template}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{gensymb, multicol, verbatim, enumitem, nicefrac}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\noindent {\sc {\bf {\Large Variation of parameters}}}
+\bigskip
+\bigskip
+
+Find the general solution of each differential equation.
+\begin{enumerate}
+
+\item
+$y^{\prime \prime} + y = \tan x$
+
+\item
+$y^{\prime \prime} + 9y = 2 \sec 3x$
+
+\item
+$y^{\prime \prime} - 2y^{\prime} + y = \dfrac{e^x}{x}$
+
+\item
+$y^{\prime \prime} + 4y = \sin^2 x$
+
+\end{enumerate}
+
+\bigskip
+
+\newpage
+
+ANSWERS
+
+\begin{enumerate}
+	\item $y(x) = C_1 \cos x + C_2 \sin x - \cos x \> \ln \lvert \sec x + \tan x \rvert$
+	\item $y(x) = C_1 \cos 3x + C_2 \sin 3x + \dfrac{2}{3} x \sin 3x  
+    	+ \dfrac{2}{9} \cos 3x \> \ln \rvert \cos 3x \rvert$
+	\item $y(x) = C_1 e^x + C_2 x e^x + x e^x \ln \lvert x \rvert$
+	\item $y(x) = C_1 \cos 2x + C_2 \sin 2x + \dfrac{1}{8} - \dfrac{1}{8} x \sin 2x$
+\end{enumerate}
+
+\end{document}

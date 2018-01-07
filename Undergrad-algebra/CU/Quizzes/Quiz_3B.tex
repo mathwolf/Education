@@ -1,0 +1,114 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 3B: Radicals, lines}}
+            \hfill Math 1110, Fall 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+
+\begin{questions}
+
+\question[3]
+Solve $\sqrt{x+3} = 4$.
+
+\vspace{\stretch{2}}
+
+\question[5]
+Solve $x = \sqrt{3x + 10}$.
+
+\vspace{\stretch{2}}
+
+\question[2]
+Graph the line $5x - 3y = 9$.
+
+\bigskip
+
+\begin{asy}
+size(6cm);
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), gray);
+    draw((i,-6)--(i,6), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+\end{asy}
+
+\vspace{\stretch{1}}
+
+\clearpage 
+
+\question[10]
+Consider the points $(2,-2)$ and $(-2,1)$.
+
+\begin{parts}
+\part
+Find the distance between these two points.
+
+\vspace{\stretch{2}}
+
+\part 
+Find the slope of the line containing these points.
+
+\vspace{\stretch{2}}
+
+\part
+Find the equation of the line containing these points.
+
+\vspace{\stretch{2}}
+
+\part
+Graph the equation that you found in part (c)
+
+\bigskip
+
+\begin{asy}
+size(6cm);
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), gray);
+    draw((i,-6)--(i,6), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+\end{asy}
+
+\vspace{\stretch{1}}
+
+\end{parts}
+
+\end{questions}
+
+\end{document}

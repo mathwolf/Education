@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+
+\title{Worksheet template}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{gensymb, multicol, verbatim, enumitem, nicefrac}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\noindent {\sc {\bf {\Large Advanced ellipses and hyperbolas}}}
+\bigskip
+\bigskip
+
+Review: solve the problem using a system of equations.
+
+\begin{enumerate}
+	\item Say that Painter A can paint a room in 8 hours.  Painter B can paint the same room in 6 hours.
+    How long will it take to paint the room if the two painters work together?
+\end{enumerate}
+
+Put each equation in standard form and determine the center.  If the equation describes an ellipse, find the vertices, co-vertices and foci.  If the equation describes a hyperbola, find the vertices, foci and asymptotes.  Then draw the graph.
+\bigskip
+
+\begin{enumerate}
+\setcounter{enumi}{1}
+
+	\item $9x^2 + 4y^2 + 54x - 8y + 49 = 0$
+    
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+
+	\item $4y^2 - x^2 + 8y - 4x - 4 = 0$
+    
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+
+\newpage
+
+	\item $x^2 - 8x + 2 = y^2 - 2y + 3$
+    
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+
+	\item $x^2 + 4y^2 - 2x + 24y + 21 = 0$
+    
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+\end{enumerate}
+
+ANSWERS
+
+\begin{multicols}{2}
+\begin{enumerate}
+	\item 3.4 hours
+ 	\item An ellipse with center: $(-3,1)$, vertices: $(-3,-2)$ and $(-3,4)$, 
+    covertices $(-5,1)$ and $(-1,1)$,  foci: $(-3,-1.24)$ and $(-3,3.24)$
+	\item A hyperbola with center: $(-2,-1)$, vertices: $(-2,-3)$ and $(-2,1)$, 
+    foci: $(-2,-3.36)$ and $(-2,1.36)$, asymptotes: $y = \dfrac{1}{2} x$ and 
+    $ y = - \dfrac{1}{2} x - 2$
+	\item A hyperbola with center: $(4,-1)$, vertices: $(0,-1)$ and $(8,-1)$, 
+    foci: $(-1.66,-1)$ and $(9.66,-1)$, asymptotes: $y = x - 5$ and 
+    $ y = - x + 3$
+ 	\item An ellipse with center: $(1,-3)$, vertices: $(-3,-3)$ and $(5,-3)$, 
+    covertices $(1,-5)$ and $(1,-1)$,  foci: $(-2.46,-3)$ and $(4.46,-3)$
+\end{enumerate}
+\end{multicols}
+\end{document}

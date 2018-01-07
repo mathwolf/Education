@@ -1,0 +1,74 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage[inline]{asymptote}
+\usepackage{amsmath, gensymb, nicefrac, verbatim, graphicx}
+\usepackage[export]{adjustbox}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\title{Algebra Exam 1 Part 2 - CU Fall 2017}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Exam 1 review question}}
+            \hfill Math 1110, Fall 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+Use a calculator to answer the following question.
+
+\begin{questions}
+
+\question[10]
+\begin{parts}
+
+\part 
+Use a table to graph the following function.
+\begin{align*}
+g(x) = \sqrt{x^2 - 6x + 11}
+\end{align*}
+Your table should give $(x,y)$ pairs for at least six points.  Show both positive and negative values of $x$.
+
+\bigskip
+
+\begin{asy}
+size(8cm);
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), gray);
+    draw((i,-6)--(i,6), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+\end{asy}
+
+\vspace{\stretch{1}}
+
+\part
+Find the average rate of change for $g(x)$ on the interval between $x = -2$ and $x = 2$.
+
+\vspace{\stretch{2}}
+
+\end{parts}
+
+\end{questions}
+
+\end{document}

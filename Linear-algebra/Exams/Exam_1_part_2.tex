@@ -1,0 +1,213 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage[inline]{asymptote}
+\usepackage{amsmath, gensymb, nicefrac, verbatim, graphicx, multicol, arydshln}
+\usepackage[export]{adjustbox}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+\newcommand{\real}{\mathbf{R}}
+
+\title{Linear Exam 1 part 2 - Fall 2016}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Exam 1, part 2}}
+            \hfill MAT 255, Fall 2016}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+You can use a calculator on the following problems.
+
+\begin{questions}
+\setcounter{question}{2}
+\question[10]
+\begin{parts}
+\part
+Applying Gaussian elimination to the linear system
+\begin{gather*}
+	3x_1 + 4x_2 + x_3 = 9 \\
+    6x_1 + 5x_2 + 2x_3 + x_4 = 9
+\end{gather*}
+produces the reduced row echelon form
+\begin{gather*}
+	\left[ \begin{array}{cccc:c}
+	1 & 0 & \nicefrac{1}{3} & \nicefrac{4}{9} & -1 \\
+    0 & 1 & 0 & - \nicefrac{1}{3} & 3
+	\end{array} \right].
+\end{gather*}
+What are the solutions to the linear system? Use parameters for any free variables.
+\vspace{\stretch{2}}
+
+\part
+Applying Gaussian elimination to the linear system
+\begin{gather*}
+	x_1 + 4x_2 + 3x_3 + 4x_4 = 16 \\
+    2x_1 + 8x_2 + 6x_3 + 8x_4 = 8
+\end{gather*}
+produces the reduced row echelon form
+\begin{gather*}
+	\left[ \begin{array}{cccc:c}
+	1 & 4 & 3 & 4 & 0 \\
+    0 & 0 & 0 & 0 & 1
+	\end{array} \right].
+\end{gather*}
+What are the solutions to the linear system? Use parameters for any free variables.
+\vspace{\stretch{3}}
+\end{parts}
+
+\clearpage
+\question[20]
+\begin{parts}
+\part
+Describe the shape made by the span of the vectors
+$\left[ \begin{array}{c}
+1 \\ 1 \\ 0
+\end{array} \right]$ and
+$\left[ \begin{array}{c}
+1 \\ 0 \\ -1
+\end{array} \right]$.
+\vspace{\stretch{1}}
+
+\part
+Does the vector
+$\vec{v} = \left[ \begin{array}{c}
+4 \\ 2 \\ -2
+\end{array} \right]$
+lie in
+$\textnormal{Span} \left\lbrace \left[ \begin{array}{c}
+1 \\ 1 \\ 0
+\end{array} \right], 
+\left[ \begin{array}{c}
+1 \\ 0 \\ -1
+\end{array} \right]
+\right\rbrace$?
+\vspace{\stretch{3}}
+
+\part
+For what values of the parameter $k$ does the vector 
+$\vec{v} = \left[ \begin{array}{c}
+0 \\ 4 \\ k
+\end{array} \right]$
+lie in
+$\textnormal{Span} \left\lbrace \left[ \begin{array}{c}
+1 \\ 1 \\ 0
+\end{array} \right], 
+\left[ \begin{array}{c}
+1 \\ 0 \\ -1
+\end{array} \right]
+\right\rbrace$?
+\vspace{\stretch{4}}
+
+\end{parts}
+
+\clearpage
+\question[18]
+Determine if the given vectors form a linearly independent set.  Explain the reasons that support your conclusion.
+\smallskip
+\begin{parts}
+\part
+$\vec{u} = \left[
+\begin{array}{c}
+	1 \\ 0 \\ 1
+\end{array}
+\right],
+\vec{v} = \left[
+\begin{array}{c}
+	2 \\ 3 \\ 4
+\end{array}
+\right],
+\vec{w} = \left[
+\begin{array}{c}
+	2 \\ 6 \\ 6
+\end{array}
+\right]$
+\vspace{\stretch{2}}
+
+\part
+$\vec{u} = \left[
+\begin{array}{c}
+	1 \\ 0 \\ 1
+\end{array}
+\right],
+\vec{v} = \left[
+\begin{array}{c}
+	2 \\ 3 \\ 4
+\end{array}
+\right],
+\vec{w} = \left[
+\begin{array}{c}
+	2 \\ 6 \\ 8
+\end{array}
+\right]$
+\vspace{\stretch{2}}
+
+\part
+$\vec{u} = \left[
+\begin{array}{c}
+	1 \\ 0 \\ 1
+\end{array}
+\right]$
+\vspace{\stretch{2}}
+\end{parts}
+
+\clearpage
+\question[15]
+Let $T: \real^2 \to \real^2$ be the following linear transformation.  First the plane is rotated $90 \degree$ in a counterclockwise (positive) direction.  Next, the plane is reflected across the y-axis.  Finally, the plane is rotated $45 \degree$ in a clockwise (negative) direction. 
+\begin{parts}
+\part
+Draw pictures that show the locations of the unit coordinate vectors $\vec{e_1}$ and $\vec{e_2}$ before and after the transformation $T$.
+\vspace{\stretch{3}}
+
+\part
+Write the matrix for this transformation. 
+\vspace{\stretch{2}}
+
+\part
+Find the image of the vector $\vec{v} = \left[
+\begin{array}{c}
+1 \\ -3
+\end{array} \right]$
+under the transformation $T$.
+\end{parts}
+\vspace{\stretch{4}}
+
+
+\clearpage
+\question[12]
+\begin{parts}
+\part
+Let $A$ be a square matrix of size $n \times n$.  Give the definition of the inverse matrix of $A$.  
+\vspace{\stretch{1}}
+
+\part
+Find the inverse of the matrix $A = 
+\left[
+\begin{array}{cc}
+	1 & 3 \\ 
+    2 & 5
+\end{array}
+\right]$, or show that the inverse does not exist.
+\end{parts}
+\vspace{\stretch{3}}
+
+\end{questions}
+
+\end{document}

@@ -1,0 +1,89 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\newcommand{\laplace}[1]{\mathcal{L} \left\lbrace #1 \right\rbrace}
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 9}}
+            \hfill MAT 201, Spring 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+
+
+\begin{enumerate}
+
+	\item $P(x) = x^{2/3} \left( x^2 - 4 \right)$
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+
+    \item $Q(x) = x^5 - 4x^3 + 4x - 1$
+    
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+
+\bigskip
+\bigskip
+
+\newpage
+
+	\item $R(x) = \dfrac{3x^2 - 12x}{x^2 - 2x - 3}$
+    
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+
+\end{enumerate}
+
+\end{document}

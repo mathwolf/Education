@@ -1,0 +1,90 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Worksheet template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Homogeneous equations}}}
+
+\bigskip
+
+Solve each differential equation or IVP.
+
+\begin{questions}
+
+\question
+$4y^{\prime \prime} + 4y^{\prime} + 17y = 0, \> y(0) = -1, \> y'(0) = 2$
+
+\question
+$y^{\prime \prime} - 16y = 0$
+
+\question
+$y^{\prime \prime} + 16y = 0$
+
+\question
+$y^{\prime \prime \prime} + 3y^{\prime \prime} - 4y = 0$
+
+\question
+$\dfrac{d^4y}{dx^4} +2 \dfrac{d^2y}{dx^2} +y = 0$
+
+\question
+$y^{\prime \prime} - 6y^{\prime} + 25y = 0, \> y(0) = 3, \> y^{\prime} (0) = 1$
+
+\question
+$y^{\prime \prime} - 4y^{\prime} + 3y = 0, \> y(0) = 7, \> y^{\prime} (0) = 11$
+
+\end{questions}
+
+\clearpage
+
+ANSWERS
+
+\bigskip
+
+\begin{questions}
+
+\question
+$y(x) = -e^{-x/2} \cos \left( 2x \right) + \dfrac{3}{4} e^{-x/2} \sin \left( 2x \right) $
+
+\question
+$y(x) = C_1 e^{4x} + C_2 e^{-4x}$
+
+\question
+$y(x) = C_1 \cos \left( 4x \right) + C_2 \sin \left( 4x \right)$
+
+\question
+$y(x) = C_1 e^x + C_2 e^{-2x} + C_3 xe^{-2x}$
+
+\question
+$y(x) = C_1 \cos \left( x \right) + C_2 \sin \left( x \right) + C_3 x \cos \left( x \right)
+	+ C_4 x \sin \left( x \right)$
+    
+\question
+$y(x) = 3 e^{3x} \cos \left( 4x \right) - 2 e^{3x} \sin \left( 4x \right)$
+
+\question
+$y(x) = 5e^x + 2e^{3x}$
+
+\end{questions}
+
+\end{document}

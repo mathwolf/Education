@@ -1,0 +1,54 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 10}}
+            \hfill MAT 201, Spring 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+\begin{questions}
+
+\question[10]
+Find the absolute maximum and absolute minimum of the function 
+\begin{align*}
+f(x) = \dfrac{x}{x^2 + 1}
+\end{align*}
+when $x$ is contained in the interval $[0,3]$.
+
+\clearpage
+
+\question[10]
+Find all critical points of the function $y = 2x^4 - 8x^2$.  Classify each point as a local maximum, local minimum, or neither.
+
+\end{questions}
+
+\end{document}

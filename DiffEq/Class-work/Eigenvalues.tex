@@ -1,0 +1,148 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, enumitem}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Eigenvalues and eigenvectors}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+\bigskip
+\newline
+Find all eigenvalues of the following matrices.  Find one eigenvector corresponding to each eigenvalue.
+\begin{questions}
+
+\question
+$A =
+\left[ \begin{array}{cc}
+2 & -1 \\ -1 & 2
+\end{array}
+\right]$
+
+\question
+$B =
+\left[ \begin{array}{cc}
+5 & -4 \\ -4 & 5
+\end{array}
+\right]$
+
+\question
+$C =
+\left[ \begin{array}{cc}
+1 & 2 \\ 2 & 4
+\end{array}
+\right]$
+
+\question
+$D =
+\left[ \begin{array}{cc}
+0 & 1 \\ -1 & 0
+\end{array}
+\right]$
+
+\question
+$A =
+\left[ \begin{array}{ccc}
+1 & -1 & 0 \\ -1 & 2 & -1 \\ 0 & -1 & 1
+\end{array}
+\right]$
+
+\end{questions}
+\bigskip
+Find the solution to each system of differential equations or IVP.
+
+\begin{questions}
+\setcounter{question}{5}
+\question
+$\dfrac{dx}{dt} = y \smallskip \\ \dfrac{dy}{dt} = 4x - 3y$
+
+\question
+$\dfrac{dx}{dt} = y \smallskip \\ \dfrac{dy}{dt} = 6x - 7y \smallskip \\ x(0) = 2, \> y(0) = -1$
+
+\end{questions}
+
+\newpage
+
+ANSWERS
+
+\begin{questions}
+\question
+$\lambda_1 = 1, \> \lambda_2 = 9 \mbox{ with possible eigenvectors } 
+\mathbf{v}_1 = \left[ \begin{array}{c}
+1 \\ 1
+\end{array} \right], \>
+\mathbf{v}_2 = \left[ \begin{array}{c}
+1 \\ -1
+\end{array} \right]$
+
+\question
+$\lambda_1 = 1, \> \lambda_2 = 3 \mbox{ with possible eigenvectors } 
+\mathbf{v}_1 = \left[ \begin{array}{c}
+1 \\ 1
+\end{array} \right], \>
+\mathbf{v}_2 = \left[ \begin{array}{c}
+1 \\ -1
+\end{array} \right]$
+
+\question
+$\lambda_1 = 0, \> \lambda_2 = 5 \mbox{ with possible eigenvectors } 
+\mathbf{v}_1 = \left[ \begin{array}{c}
+-2 \\ 1
+\end{array} \right], \>
+\mathbf{v}_2 = \left[ \begin{array}{c}
+1 \\ 2
+\end{array} \right]$
+
+\question
+$\lambda_1 = i, \> \lambda_2 = -i \mbox{ with possible eigenvectors } 
+\mathbf{v}_1 = \left[ \begin{array}{c}
+1 \\ i
+\end{array} \right], \>
+\mathbf{v}_2 = \left[ \begin{array}{c}
+1 \\ -i
+\end{array} \right]$
+
+\question
+$\lambda_1 = 0, \> \lambda_2 = 1, \> \lambda_3 = 3 \mbox{ with possible eigenvectors } 
+\mathbf{v}_1 = \left[ \begin{array}{c}
+1 \\ 1 \\ 1
+\end{array} \right], \>
+\mathbf{v}_2 = \left[ \begin{array}{c}
+1 \\ 0 \\ -1
+\end{array} \right], \>
+\mathbf{v}_3 = \left[ \begin{array}{c}
+1 \\ -2 \\ 1
+\end{array} \right]$
+
+\question
+$x(t) = C_1e^{t} + C_2 e^{-4t} \\
+y(t) = C_1e^{2t} - 4C_2 e^{-4t}$
+
+\question
+$x(t) = 3e^{2t} -e^{-5t} \\
+y(t) = 2e^{2t} - 3e^{-5t}$
+\end{questions}
+
+\end{document}

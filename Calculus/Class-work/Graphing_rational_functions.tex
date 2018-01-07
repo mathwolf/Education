@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+
+\title{Worksheet template}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{gensymb, multicol, verbatim, enumitem, nicefrac}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\noindent {\sc {\bf {\Large Rational functions}}}
+\bigskip
+\bigskip
+
+For each rational function, identify all holes, vertical asymptotes, zeros, and horizontal asymptotes.  Then sketch the graph.
+
+\begin{enumerate}
+
+	\item $h(x) = \dfrac{x-2}{x-4}$
+	\begin{flushleft}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushleft}
+    
+    \vspace{\stretch{2}}
+    
+	\item $f(x) = \dfrac{x^2 + 5x + 6}{x^2 + 3x + 2}$
+	\begin{flushleft}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushleft}
+	
+    \vspace{\stretch{3}}
+	\clearpage
+    
+	\item $g(x) = \dfrac{3x^2}{x^2 - 9}$
+	\begin{flushleft}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushleft}
+    \vspace{\stretch{2}}
+
+	\item $f(x) = \dfrac{x^3 - 9x}{3x^2 - 6x - 9}$
+	\begin{flushleft}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushleft}
+	\vspace{\stretch{3}}
+
+\end{enumerate}
+
+\end{document}

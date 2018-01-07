@@ -1,0 +1,80 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 6: Sets and probability}}
+            \hfill MAT 123, Summer 2016}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+
+\begin{questions}
+
+\question[10]
+Define the sets $A = \left\lbrace 3, 6 ,9 \right\rbrace$,
+$B = \left\lbrace 2, 4, 6, 8, 10 \right\rbrace$, and $C = \left\lbrace 1,2 \right\rbrace$.
+In this problem all of these sets are considered subsets of the universal set 
+$\mathcal{U} = \left\lbrace 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 \right\rbrace$.  Find the following sets.
+
+\begin{parts}
+\part $A \cup C$
+
+\vspace{\stretch{2}}
+
+\part $A \cap C$
+
+\vspace{\stretch{2}}
+
+\part $B^\prime$
+
+\vspace{\stretch{4}}
+
+\end{parts}
+\newpage
+
+\question[10]
+Suppose that you draw one ball from an urn containing 6 white balls, 4 red balls, and 2 green balls.
+
+\begin{parts}
+\part
+What is the probability that you draw a green ball?
+\vspace{\stretch{2}}
+
+\part
+What is the probability that you draw a white ball?
+\end{parts}
+\vspace{\stretch{3}}
+
+\end{questions}
+
+\end{document}

@@ -1,0 +1,114 @@
+\documentclass[12pt]{article}
+
+\title{Worksheet template}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{gensymb, multicol, verbatim, enumitem, nicefrac}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\section*{Circle}
+
+Standard form:
+$\dfrac{(x-h)^2}{R^2} + \dfrac{(y-k)^2}{R^2} = 1$
+\\
+Center: $(h,k)$ \\
+Radius: $R$
+
+\section*{Ellipse}
+
+\begin{multicols}{2}
+
+with major axis in $x$, 
+\newline
+\newline
+Standard form:
+$\dfrac{(x-h)^2}{a^2} + \dfrac{(y-k)^2}{b^2} = 1$
+\\
+Center: $(h,k)$ \\
+Vertices: $(h \pm a, k)$ \\
+Covertices: $(h, k \pm b)$ \\
+Foci: $(h \pm c, k)$ where $c^2 = a^2 - b^2$ \\
+\newline
+
+with major axis in $y$, 
+\newline
+\newline
+Standard form:
+$\dfrac{(x-h)^2}{b^2} + \dfrac{(y-k)^2}{a^2} = 1$
+\\
+Center: $(h,k)$ \\
+Vertices: $(h, k \pm a)$ \\
+Covertices: $(h \pm b, k)$ \\
+Foci: $(h, k \pm c)$ where $c^2 = a^2 - b^2$ \\
+
+\end{multicols}
+
+\section*{Hyperbola}
+
+\begin{multicols}{2}
+with transverse axis in $x$,
+\newline
+\newline
+Standard form:
+$\dfrac{(x-h)^2}{a^2} - \dfrac{(y-k)^2}{b^2} = 1$
+\\
+Center: $(h,k)$ \\
+Vertices: $(h \pm a, k)$ \\
+Foci: $(h \pm c, k)$ where $c^2 = a^2 + b^2$ \\
+Asymptotes: $y - k = \pm \dfrac{b}{a} (x-h)$ \\
+\newline
+
+with transverse axis in $y$,
+\newline
+\newline
+Standard form:
+$\dfrac{(y-k)^2}{a^2} - \dfrac{(x-h)^2}{b^2} = 1$
+\\
+Center: $(h,k)$ \\
+Vertices: $(h, k \pm a)$ \\
+Foci: $(h, k \pm c)$ where $c^2 = a^2 + b^2$ \\
+Asymptotes: $y - k = \pm \dfrac{a}{b} (x-h)$ \\
+\newline
+
+\end{multicols}
+
+\section*{Parabola}
+\begin{multicols}{2}
+
+opening in $x$,
+\newline
+\newline
+Standard form:
+$4p(x - h) =  (y - k)^2$
+\\
+Vertex: $(h,k)$ \\
+Focus: $(h+p,k)$ \\
+Directrix: $x = h - p$ \\
+\newline
+
+opening in $y$,
+\newline
+\newline
+Standard form:
+$4p(y - k) = (x - h)^2$
+\\
+Vertex: $(h,k)$ \\
+Focus: $(h,k+p)$ \\
+Directrix: $y = k - p$ \\
+\newline
+
+
+\end{multicols}
+\end{document}

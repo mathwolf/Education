@@ -1,0 +1,56 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Retake 11}}
+            \hfill MAT 201, Spring 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+\begin{questions}
+
+\question[20]
+We will create a right triangle in the first quadrant of the plane.  The endpoints of the hypotenuse lie at $(a,0)$ and $(0,b)$.  The other two sides lie on the $x$- and $y$-axes.  Suppose that the total length of the hypotenuse is fifty units.  What is the maximum area that can be enclosed in a right triangle of this type?
+\end{questions}
+
+\begin{flushleft}
+\begin{asy}
+size(6cm);
+import graph;
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+draw((0,4) -- (2.5,0));
+dot(Label("$(0,a)$", align=W), (0,4));
+dot(Label("$(b,0)$", align=S), (2.5,0));
+\end{asy}
+\end{flushleft}
+
+\end{document}

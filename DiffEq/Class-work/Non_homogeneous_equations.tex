@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+
+\title{Worksheet template}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{gensymb, multicol, verbatim, enumitem, nicefrac}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\noindent {\sc {\bf {\Large Non-homogeneous equations}}}
+\bigskip
+\bigskip
+
+Solve each differential equation or IVP.
+\begin{enumerate}
+	\item $3y^{\prime \prime} + y^{\prime} - 2y = 2 \cos x$
+    
+	\item $y^{\prime \prime} - 4y = 2 e^{2x}$
+    
+    \item $y^{\prime \prime} - 3y^{\prime} + 2y = 3e^{-x} - 10 \cos \left( 3x \right),
+    	\> y(0) = 1, \> y^{\prime}(0) = 2$
+        
+	\item $y^{\prime \prime \prime} - 2y^{\prime \prime} + y^{\prime} = 1 + x e^{x},
+    	\> y(0) = 0, \> y^{\prime}(0) = 0, \> y^{\prime \prime}(0) = 0$
+        
+\end{enumerate}
+
+\bigskip
+
+\newpage
+
+ANSWERS
+
+\begin{enumerate}
+	\item $y(x) = C_1 e^{2x/3} + C_2 e^{-x} - \dfrac{5}{13} \cos x + \dfrac{1}{13} \sin x$
+    \item $y(x) = C_1 e^{2x} + c_2 e^{-2x} \dfrac{1}{2} x e^{2x}$
+    \item $y(x) = -\dfrac{1}{2} e^x + \dfrac{6}{13} e^{2x} + \dfrac{1}{2} e^{-x} 
+    	+ \dfrac{7}{13} \cos \left( 3x \right) + \dfrac{9}{13} \sin \left( 3x \right)$
+    \item $y(x) = 4 - 4 e^x + 3x e^x + x - \dfrac{1}{2} x^2 e^x + \dfrac{1}{6} x^3 e^x$
+\end{enumerate}
+
+\end{document}

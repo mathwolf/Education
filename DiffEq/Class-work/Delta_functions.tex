@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+
+\title{Worksheet template}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{gensymb, multicol, verbatim, enumitem, nicefrac}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\noindent {\sc {\bf {\Large Delta functions}}}
+\bigskip
+\bigskip
+
+\begin{enumerate}
+
+	\item A mass of 1 kg is attached to a spring with constant 4 N/m.  The system is free from
+    damping.  The mass is released from rest at 3 m above its equilibrium position.  At $t = 2\pi$ seconds, 
+    the mass is struck with a hammer that provides an impulse of 8 N$\cdot$s.  Find the equation of motion.
+    
+    \item Consider a mass-spring system with $m=k=1$, $b=0$, and $x(0) = x^{\prime}(0) = 0$.  At each of the 
+    times $0, \pi, 2\pi, 3\pi, \ldots$, the mass is struck with a hammer that imparts an impulse of 1.  
+    Describe the motion of the mass.  
+\end{enumerate}
+
+\clearpage
+SOLUTIONS
+\newline
+\bigskip
+\begin{enumerate}
+\item $x(t) \approx \begin{cases}
+	3 \cos 2t & \mbox{if } t \le 2\pi \\
+    5 \cos \left( 2t - 0.9273 \right) & \mbox{if } t > 2\pi
+   \end{cases}$
+\item For $n\pi < t < (n+1) \pi$, 
+	\begin{gather*}
+    x(t) = \begin{cases}
+	\sin t & \mbox{if } n \mbox{ is even,} \\
+	0 & \mbox{if } n \mbox{ is odd.} \\
+   \end{cases}
+   \end{gather*}
+The resulting function is called a half-wave rectification of $\sin t$.
+\end{enumerate}
+\end{document}

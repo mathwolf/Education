@@ -1,0 +1,81 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, enumitem}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Systems of differential equations}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+\bigskip
+\newline
+Find the solution to each system of differential equations or IVP.
+\begin{questions}
+
+\question
+$\dfrac{dx}{dt} = x + 2y \smallskip \\ \dfrac{dy}{dt} = 2x + y$
+
+\question
+$\dfrac{dx}{dt} = x - 5y \smallskip \\ \dfrac{dy}{dt} = x - y$
+
+\question
+$\dfrac{dx}{dt} = x - 3y \smallskip \\ \dfrac{dy}{dt} = 3x + 7y$
+
+\question
+$\dfrac{dx}{dt} = x - 2y \smallskip \\ \dfrac{dy}{dt} = 2x + y \smallskip \\ x(0) = 0, \> y(0) = 4$
+
+\question
+Three connected tanks are filled with a saline mixture.  The volumes of solution in Tanks A, B, and C are 20, 40, and 50 liters, respectively.  Fresh water is being pumped into Tank A.  The mixed solution is pumped from A to B, and a mixture is also pumped from B to C.  Finally, the solution is being removed from the system by being pumped out of Tank C.  The rate of flow in all of these connections is 10 liters per minute.  At time $t = 0$ there are 15 kilograms of salt in Tank A, while Tanks B and C contain pure water.  Find the amount of salt in each tank at time $t$.
+\end{questions}
+
+\newpage
+
+ANSWERS
+
+\begin{questions}
+
+\question
+$x(t) = C_1e^{-t} + C_2 e^{3t} \\
+y(t) = -C_1e^{-t} + C_2 e^{3t}$
+
+\question
+$x(t) = 5C_1 \cos 2t + 5C_2 \sin 2t \\
+y(t) = (C_1 - 2C_2) \cos 2t + (2C_1 - C_2) \sin 2t$
+
+\question
+$x(t) = (-3C_1 + C_2) e^{4t} - 3C_2 te^{4t} \\
+y(t) = 3C_1e^{4t} + 3C_2 te^{4t}$
+
+\question
+$x(t) = -4e^t \sin 2t \\
+y(t) = 4e^t \cos 2t$
+
+\question
+$A(t) = 15e^{-t/2} \\ B(t) = -30e^{-t/2} + 30e^{-t/4} \\
+C(t) = 25e^{-t/2} - 150e^{-t/4} + 125e^{-t/5}$
+
+\end{questions}
+
+\end{document}

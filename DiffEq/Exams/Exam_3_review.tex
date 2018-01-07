@@ -1,0 +1,170 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac, enumerate}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Differential equations exam 3 review - SP 17}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Exam 3 review problems}}
+            \hfill MAT 265, Spring 2017}
+\newline
+\newline
+Solve the equation using the power series method.  Write out the first three nonzero terms of each linearly independent solution.
+
+\begin{questions}
+
+\question
+$y^{\prime \prime} + x^2 y^{\prime} + x^2 y = 0$
+
+\question
+$y^{\prime \prime} + e^{-x} y = 0$
+
+\end{questions}
+
+Use the table to find the Laplace transform of each function.
+
+\begin{questions}
+\setcounter{question}{2}
+\question
+$f(t) = 3e^{6t}$
+
+\question
+$g(t) = 3 \cos t + \sin \left( 3t \right)$
+
+\question
+$h(t) = \left( t -1 \right)^2$
+
+\question
+$f(t) = e^{2t} \> \mathcal{U} \left( t - 3 \right)$
+
+\question
+$g(t) = \begin{cases}
+	\cos 2t & \mbox{if } 0 \le t < 2\pi \\
+    0 & \mbox{if } t \ge 2\pi
+\end{cases}$
+
+\question
+$h(t) = \displaystyle \int_0^t e^{\tau} \> \sin \left( t - \tau \right) \> d\tau$
+\smallskip
+\newline
+Do not evaluate the integral before finding the transform.
+
+\question
+$f(t)$ is the periodic function shown in the figure below.
+\begin{center}
+\begin{asy}
+unitsize(x=0.75cm);
+import graph;
+
+xlimits( -1, 5);
+ylimits( -2, 2);
+xaxis(xmin=-1, xmax=5,Ticks("%"));
+yaxis(ymin=-2, ymax=2, Ticks("%"));
+
+labelx(2,2S+0.5W);
+labelx(4,2S+0.5W);
+labely(1,2W);
+labely(-1,2W);
+dot((0,-1));
+dot((2,1));
+draw((0,-1) -- (2,1));
+dot((2,-1));
+dot((4,1));
+draw((2,-1) -- (4,1));
+dot((4,-1));
+draw((4,-1) -- (5.2,0.2));
+draw(Label("$t$",position=Relative(1),align=2S),(currentpicture.userMin().x-1,0)--(currentpicture.userMax().x+1,0),Arrow);
+draw(Label("$f(t)$",position=Relative(1),align=2W),(0,currentpicture.userMin().y-1)--(0,currentpicture.userMax().y+1),Arrow);
+
+\end{asy}
+\end{center}
+
+\end{questions}
+
+Find the inverse Laplace transform of each function.
+
+\begin{questions}
+\setcounter{question}{9}
+\question
+$F(s) = \dfrac{5}{s-6} - \dfrac{6s}{s^2+9}$
+
+\question
+$G(s) = \dfrac{s^2 + 9s +2}{(s-1)^2(s+3)}$
+
+\question
+$H(s) = \dfrac{3s + 2}{s^2 + 2s + 10}$
+
+\question
+$F(s) = \left( \dfrac{s+1}{s^2 + 4} \right) e^{-s}$
+
+\end{questions}
+
+
+\clearpage
+SOLUTIONS
+
+\begin{questions}
+\question
+$y(x) = c_0 \left( 1 - \dfrac{x^4}{12} + \dfrac{x^7}{126} + \ldots \right) +
+    	c_1 \left( x - \dfrac{x^4}{12} - \dfrac{x^5}{20} + \ldots \right) $
+
+\question
+$y(x) = c_0 \left( 1 - \dfrac{x^2}{2} + \dfrac{x^3}{6} + \ldots \right) +
+    	c_1 \left( x - \dfrac{x^3}{6} - \dfrac{x^4}{12} + \ldots \right) $
+
+\question
+$\dfrac{3}{s-6}$
+
+\question
+$\dfrac{3s}{s^2 + 1} + \dfrac{3}{s^2+9}$
+
+\question
+$\dfrac{s^2 - 2s + 2}{s^3}$
+
+\question
+$\dfrac{e^{-3(s-2)}}{s-2}$
+\question
+$\dfrac{s}{s^2+4} - \dfrac{e^{-2\pi s}}{s^2+4}$
+
+\question
+$\dfrac{1}{(s-1)(s^2+1)}$
+
+\question
+$\dfrac{1}{1 - e^{-2s}} \left( \dfrac{1}{s^2} - \dfrac{1}{s} - \dfrac{e^{-2s}}{s} - \dfrac{e^{-2s}}{s^2} \right)$
+
+\question
+$5e^{6t} - 6 \cos 3t$
+\question
+$2e^t + 3te^t - e^{-3t}$
+
+\question
+$3 e^{-t/2} \cos \left( \dfrac{\sqrt{39}}{2} t \right) + 
+	\dfrac{1}{\sqrt{39}} e^{-t/2} \sin \left( \dfrac{\sqrt{39}}{2} t \right)$
+ 
+\question
+$\begin{cases}
+0 & \mbox{if } t < 1 \\
+\cos \left( 2t - 2 \right) + 
+	\dfrac{1}{2} \sin \left( 2t - 2 \right) & \mbox{if } t \ge 1
+\end{cases}$
+\end{questions}
+\end{document}

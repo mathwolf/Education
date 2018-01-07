@@ -1,0 +1,117 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Retake 6B: Quadratic functions}}
+            \hfill Math 1110, Fall 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+
+\begin{questions}
+
+\question[10]
+Graph each of the following parabolas.
+
+\begin{parts}
+\part 
+$f(x) = \dfrac{1}{2} x^2 - 3 x - \dfrac{1}{2}$
+
+\vspace{\stretch{1}}
+
+\begin{asy}
+size(7cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), gray);
+    draw((i,-5)--(i,5), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+\end{asy}
+
+\vspace{\stretch{1}}
+
+\part
+$y = -x^2 - 6x - 8$
+
+\vspace{\stretch{1}}
+
+\begin{asy}
+size(7cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), gray);
+    draw((i,-5)--(i,5), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+\end{asy}
+
+\vspace{\stretch{1}}
+
+\end{parts}
+
+\vspace{\stretch{2}}
+
+\newpage 
+
+\question[10]
+A experimental aircraft is launched at time $t=0$.  Its height above the ground is given by the function \begin{equation*}
+	y(t) = -5t^2 + 90t + 250 ,
+\end{equation*}
+where $y$ is height (in meters) and $t$ is time (in seconds).
+\begin{parts}
+\part
+How high is the aircraft at the time it is launched?
+\vspace{\stretch{2}}
+
+\part
+How high is it after 3 seconds?
+\vspace{\stretch{2}}
+
+\part
+What is its maximum height?
+\vspace{\stretch{2}}
+
+\part
+At what time does the aircraft strike the ground?
+\vspace{\stretch{3}}
+
+\end{parts}
+
+\end{questions}
+
+\end{document}

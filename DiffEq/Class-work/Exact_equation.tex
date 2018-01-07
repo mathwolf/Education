@@ -1,0 +1,60 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Worksheet template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Exact equations}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+\smallskip
+
+Test to see if each equation is exact.  If so, find its solution.
+\begin{questions}
+
+\question
+$\left( 2x + 3y \right) dx + \left( 3x + 2y  \right) dy = 0$
+
+\question
+$\left( 4x^2 + 3y^2 \right) dx - 2xy \> dy = 0$
+
+\question
+$\left( x^3 + \dfrac{y}{x} \right) dx + \left( y^2 + \ln x \right) dy = 0$
+
+\question
+$\left( \cos x + \ln y  \right) dx + \left( \dfrac{x}{y} + e^y \right) dy = 0$
+
+\end{questions}
+
+\clearpage
+\bigskip
+ANSWERS
+\bigskip
+
+\begin{questions}
+\question $x^2 + 3xy + y^2 = C$
+\question Not exact
+\question $3x^4 + 4y^3 + 12 y \ln x = C$
+\question $\sin x + x \ln y + e^y = C$
+\end{questions}
+\end{document}

@@ -1,0 +1,201 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Markov chains}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Markov chains}}
+            \hfill MAT 123, Summer 2016}
+\bigskip
+\bigskip
+
+\begin{questions}
+\question
+A rental car company has one location at DIA and a second location downtown.  It is possible for a customer to rent a car in location and return it to the other.  If a car is rented at DIA, the probability that it will be returned to DIA is 0.8.  If a car is rented downtown, the probability that it will be returned downtown is 0.7.  For our first simple model, we will assume that a car is rented and returned once per day.
+\begin{parts}
+\part
+Draw a transition diagram for the state of a rental car.
+
+\part
+Make the transition matrix.
+
+\part
+Suppose that the company begins with half of their cars at DIA and half downtown.  Write the state matrix corresponding to this setup.  
+
+\part
+Find the next state matrix in the Markov chain.  What percentage of the cars will be at DIA on the next day?
+
+\part
+Find the percentage of cars at DIA on day 2 and on day 10.
+
+\part
+Is the transition matrix for this system regular?  If so, describe the way the rental fleet will be split between locations in the long term.
+\end{parts}
+
+\question
+Based on census data, economists estimate that 95\% of people who on their own home today will also own their home in four years.  On the other hand, 15\% off people who do not own their own home today will own a home in four years.  
+
+\begin{parts}
+\part
+Draw a transition diagram for the state of a customer's preference.
+
+\part
+Make the transition matrix.
+
+\part
+Suppose that currently 65.4\% of people own their own home.  Write the initial state matrix for this data.
+
+\part
+Find the next state matrix in the Markov chain.  What percentage of people will own their home in four years?
+
+\part
+Find the percentage of homeowners in 20 years.
+
+\part
+Is the transition matrix for this system regular?  If so, what percentage of people will own their own home in the long run?
+\end{parts}
+
+\question
+Customers in a certain town can choose between McDonald's, Chipotle, and Pizza Hut.  Every day, McDonald's loses 10\% of its customers to Chipotle and 20\% to Pizza Hut; Chipotle loses 15\% of its customers to McDonald's and 10\% to Pizza Hut; and Pizza Hut loses 5\% of its customers to McDonald's and 5\% to Pizza Hut.  
+\begin{parts}
+\part
+Draw a transition diagram for a consumer's preference.
+
+\part
+Make the transition matrix.
+
+\part
+Suppose that at the beginning of our study 40\% of consumers prefer McDonald's, 30\% prefer Chipotle, and 30\% prefer Pizza Hut.  Write the state matrix for this data.
+
+\part
+Find the next state matrix in the Markov chain, and describe the corresponding consumer preferences.
+
+\part
+How will customers be split between the restaurants in the long term?
+\end{parts}
+
+\end{questions}
+
+\clearpage
+ANSWERS
+\begin{questions}
+\begin{multicols}{2}
+\question 
+\begin{parts}
+\setcounter{partno}{1}
+\part
+$\left[ \begin{array}{cc}
+0.8 & 0.2 \\ 0.3 & 0.7 
+\end{array}
+\right]$
+
+\part
+$\left[ \begin{array}{cc}
+0.5 & 0.5
+\end{array}
+\right]$
+
+\part
+$\left[ \begin{array}{cc}
+0.55 & 0.45
+\end{array} 
+\right]$
+
+55\%
+
+\part
+57.5\%
+
+60\%
+
+\part
+The long-term split has 60\% of the cars at DIA and 40\% downtown.
+\end{parts}
+\columnbreak
+\question 
+\begin{parts}
+\setcounter{partno}{1}
+\part
+$\left[ \begin{array}{cc}
+0.95 & 0.05 \\ 0.15 & 0.85 
+\end{array}
+\right]$
+
+\part
+$\left[ \begin{array}{cc}
+0.654 & 0.346
+\end{array}
+\right]$
+
+\part
+$\left[ \begin{array}{cc}
+0.6886 & 0.3114
+\end{array} 
+\right]$
+
+68.9\%
+
+\part
+71.9\%
+
+\part
+75\%
+\end{parts}
+\end{multicols}
+
+\bigskip
+\question 
+\begin{parts}
+\setcounter{partno}{1}
+\part
+$\left[ \begin{array}{ccc}
+0.7 & 0.1 & .2 \\ 0.15 & 0.75 & 0.1 \\ 0.05 & 0.05 & 0.9 
+\end{array}
+\right]$
+
+\part
+$\left[ \begin{array}{ccc}
+0.4 & 0.3 & 0.3
+\end{array}
+\right]$
+
+\part
+$\left[ \begin{array}{ccc}
+0.34 & 0.28 & 0.38
+\end{array} 
+\right]$
+\newline \\ 
+The preferences are \\
+$ \qquad 34\%  \mbox{ McDonald's} \\
+\qquad 28\%  \mbox{ Chipotle} \\
+\qquad 38\%  \mbox{ Pizza Hut} \\
+$
+\part
+$ 20\%  \mbox{ McDonald's} \\
+\qquad 20\%  \mbox{ Chipotle} \\
+\qquad 60\%  \mbox{ Pizza Hut} \\
+$
+
+\end{parts}
+\end{questions}
+\end{document}

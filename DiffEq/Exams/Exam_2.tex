@@ -1,0 +1,117 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac, enumerate}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Differential equations exam 2 - SP 17}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Exam 2}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+\bigskip
+
+\begin{questions}
+
+\question[20]
+A tank initially contains 1000 liters of pure water.  A solution containing 0.05 kilograms of salt per liter is pumped into the tank at a rate of 5 liters per minute.  A second solution containing 0.04 kilograms of salt per liter is pumped into the tank at a rate of 10 liters per minute.  The well-mixed solution is drained from the tank at a rate of 15 liters per minute.  How many kilograms of salt are in the tank after one hour?
+
+\clearpage
+
+
+\question[5]
+On the interval $I = (0,\infty)$, two solutions of the differential equation 
+\begin{align*}
+	x^2 y^{\prime \prime} -xy^{\prime} + y = 0
+\end{align*}
+are the functions
+\begin{align*}
+	y_1(x) & = x, & y_2(x) & = x \ln x.
+\end{align*}
+
+\begin{parts}
+\part
+Use the Wronskian to show that these solutions are linearly independent on $I$.
+
+\vspace{\stretch{2}}
+
+\part
+Give the general solution to the differential equation.
+\end{parts}
+
+\vspace{\stretch{2}}
+
+\question[20]
+Find the general solution for the following homogeneous problems.
+
+\begin{parts}
+\part
+$4y^{\prime \prime} + 12y^{\prime} + 9y = 0$
+
+\vspace{\stretch{4}}
+
+\clearpage
+
+\part
+$y^{\prime \prime} + 6y = 0$
+
+\vspace{\stretch{2}}
+
+\part
+$2y^{\prime \prime} + 2y^{\prime} + y = 0$
+
+\vspace{\stretch{2}}
+
+\part
+$y^{\prime \prime} - 3y^{\prime} - 10y = 0$
+\end{parts}
+
+\vspace{\stretch{3}}
+
+\clearpage
+
+\question
+Find the solution to each differential equation or IVP.
+
+\begin{parts}
+
+\part[10]
+$y^{\prime \prime} - 3y^{\prime}= 6e^x, \> y(0) = 0, y^{\prime}(0) = 0$
+
+\clearpage
+
+\part[20]
+$y^{\prime \prime} - 2y^{\prime} + y = e^t \ln t$
+
+\clearpage
+
+\part[10]
+$y^{\prime \prime} - 11y^{\prime} + 30y = -3e^{5x}$
+
+\end{parts}
+
+\clearpage
+
+\question[20 ]
+A mass of 1 kilogram is attached to a spring with a spring constant of 20 newtons per meter.  The system is submerged in a liquid that imparts a damping force with a magnitude equal to 8 times the velocity of the mass.  At time $t = 0$, the mass is pulled 0.5 meters below its equilibrium position and given an initial speed of 1 meter per second in the downward direction.  Find the equation of motion.
+
+\end{questions}
+\end{document}

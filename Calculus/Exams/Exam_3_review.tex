@@ -1,0 +1,118 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, enumitem}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Exam 3 review}}
+            \hfill MAT 201, Spring 2017}
+\bigskip
+
+\bigskip
+Estimate each value with linear approximation.  Use a fraction of whole numbers for your estimate.
+
+\begin{questions}
+
+\question
+$\sqrt[3]{7}$
+
+\question
+$\dfrac{1}{\sqrt{39}}$
+
+\question
+$\arctan 0.15$
+
+\bigskip
+
+\question
+Determine if the mean value theorem applies to the function 
+\begin{align*}
+	g(x) = \dfrac{x}{x^2 - 4}
+\end{align*}
+on the interval $[0,5]$.  If so, give the point on the graph whose existence is guaranteed by the theorem.
+
+\question
+Determine if the mean value theorem applies to the function 
+\begin{align*}
+	g(x) = \dfrac{10}{x + 4}
+\end{align*}
+on the interval $[0,5]$.  If so, give the point on the graph whose existence is guaranteed by the theorem.
+
+\bigskip
+
+\end{questions}
+
+Evaluate each limit using L'Hopital's rule.
+
+\begin{questions}
+\setcounter{question}{5}
+
+\question
+$\displaystyle \lim_{x \to 0} \dfrac{e^x-1-x}{x^2}$ 
+
+\question
+$\displaystyle \lim_{x \to \infty} x^3 e^{-x^2}$
+
+\question
+$\displaystyle \lim_{x \to \pi/2^-} \left( \sec x - \tan x \right)$ 
+
+\question
+$\displaystyle \lim_{x \to 0} \left(1 - 2x \right)^{1/x}$ 
+
+\bigskip
+
+\end{questions}
+
+Find each indefinite integral.
+
+\begin{questions}
+\setcounter{question}{9}
+
+\question
+$\displaystyle \int 5x^2 \, dx$
+
+\question
+$\displaystyle \int \left( \sin x + \dfrac{1}{x} \right) dx$
+
+\question
+$\displaystyle \int \left( 5 \cos (3x) + \dfrac{2x^5 - \sqrt{x}}{x} \right) dx$
+
+\clearpage
+
+\question
+Find $f(x)$ if
+\begin{align*}
+f^{\prime}(x) = e^{2x} + \dfrac{20}{x^2 + 1}.
+\end{align*}
+
+\question
+An experimental aircraft moves with acceleration
+\begin{align*}
+	a(t) = 6t + 4
+\end{align*}
+measured in $\textnormal{m/s}^2$.  Here $t$ denotes time in seconds after the experiment begins.  We also know that the initial velocity
+of the aircraft is $v(0) = 6$ m/s, and its initial position is \newline $h(0) = 9$ m.  Find functions for the velocity and position of the aircraft at time $t$.
+\end{questions}
+\end{document}

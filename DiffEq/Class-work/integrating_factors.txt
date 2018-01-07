@@ -1,0 +1,66 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Worksheet template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Integrating factors}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+\smallskip
+
+Find the solution to each differential equation or IVP using the method of integrating factors.  For each IVP, also give the largest interval $I$ on which your solution is defined.
+
+\begin{questions}
+
+\question
+$\dfrac{dy}{dx} - y = \dfrac{11}{8} e^{-x/3}, \; \; y(0) = -1$
+
+\question
+$(x^2 + 1) \dfrac{dy}{dx} + 3xy = 6x$
+
+\question
+$xy^{\prime} + y = 3xy, \; \; y(1) = 0$
+
+\question
+$(1 + x) \dfrac{dy}{dx} + y = \cos x, \; \; y(0) = 1$
+
+\question
+$xy^{\prime} = 3y + x^4 \cos x, \; \; y(2 \pi) = 0$
+
+\end{questions}
+
+\clearpage
+\bigskip
+ANSWERS
+\bigskip
+
+\begin{questions}
+\question $y(x) = \dfrac{1}{32} e^x - \dfrac{33}{32} e^{-x/3}, \; \; I = (-\infty, \infty)$
+\question $y(x) = 2 + C (x^2 + 1)^{-3/2}$
+\question $y(x) = 0, \; \; I = (-\infty, \infty)$
+\question $y(x) = \dfrac{1 + \sin x}{1 + x}, \; \; I = (-1, \infty)$
+\question $y(x) = x^3 \sin x, \; \; I = (-\infty, \infty)$
+
+\end{questions}
+\end{document}

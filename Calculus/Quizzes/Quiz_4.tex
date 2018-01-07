@@ -1,0 +1,69 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 4}}
+            \hfill MAT 201, Spring 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+Use the quotient rule to find derivatives of each of the following trigonometric functions.
+\begin{questions}
+
+\question[4]
+$\tan x$
+\vspace{\stretch{2}}
+
+\question[4]
+$\csc x$
+\vspace{\stretch{3}}
+
+\clearpage
+
+\question[4]
+$\sec x$
+\vspace{\stretch{2}}
+
+\question[4]
+$\cot x$
+\vspace{\stretch{2}}
+
+\end{questions}
+Evaluate the following limit.
+\begin{questions}
+\setcounter{question}{4}
+\question[4]
+$\displaystyle \lim_{x \to 0} \> \dfrac{\tan 5x}{x}$
+\vspace{\stretch{3}}
+
+\end{questions}
+
+\end{document}

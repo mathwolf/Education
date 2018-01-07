@@ -1,0 +1,79 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 5}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+For a population of fish in a lake, we assume the growth rate is proportional to the number of fish present.  Initially, the population is 10 fish.  After four months, there are 50 fish in the lake. 
+
+\begin{questions}
+\question
+Write a differential equation to describe this population.
+\question
+Based on your model, how many fish do we expect to see in 10 months? in 18 months? in 10 years?
+\question
+Consider your answers to the last question.  Under what circumstances is this differential equation a good model for the population we are discussing?  
+
+\end{questions}
+
+\clearpage
+
+Next we assume that there is a maximum population $M$ that can be supported by the resources available in the environment.  This leads to the equation
+\begin{align*}
+\dfrac{dP}{dt} = kP(M-P),
+\end{align*}
+called the \emph{logistic equation}.  For the fish model, we suppose that the maximum population of the lake is 1000 fish.  Use the same growth constant $k$ that you found in for the last model.
+
+\begin{questions}
+
+\setcounter{question}{3}
+\question
+Identify any equilibrium solutions to this equation.
+
+\question
+Plot the phase portrait and sketch a set of typical solution curves.  
+
+\question
+Suppose our initial population of fish is 1050.  What will happen in the long term?  What if the initial population is 800?
+
+\question
+Find an explicit general solution to the differential equation.  Then apply the initial condition $P(0) = 10$.
+
+\question
+Using the model we created in the last question, how many fish do we expect to see in 10 months? in 18 months? in 10 years?
+
+\end{questions}
+\end{document}

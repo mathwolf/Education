@@ -1,0 +1,69 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, enumitem}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Diff Eq honors project}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+\noindent {\sc {\bf {\Large Differential equations honors project}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+
+\bigskip
+
+\textbf{Drag force} \bigskip
+\newline
+
+One model for the magnitude of the force due to air resistance is
+\begin{align*}
+	W = \dfrac{1}{2} c_W \rho A v^2,
+\end{align*}
+where $c_W$ is a drag coefficient, $\rho$ is the density of air, $A$ is the 
+cross-sectional area of the projectile, and $v$ is its velocity.  Eventually we will put
+in numbers for the parameters in this model.  For now, just use $kv^2$ to describe this force. \bigskip
+
+Air resistance always points opposite the direction of an object's motion.
+\bigskip
+
+\textbf{One dimensional motion} \bigskip
+\newline
+In the simplest model, we will assume that the potato is moving in just the vertical direction.  At time 
+$t=0$, the potato is launched upward with an initial speed $v_0$.
+
+\begin{questions}
+
+\question
+Draw a diagram showing the forces on the potato while it is traveling upward.  Use $W$ to denote the drag force.  Make sure to label the positive direction.
+
+\question
+Use the description of $W$ above together with Newton's second law to write a differential equation for $v$ that corresponds to your diagram.  One side of the equation will have $\dfrac{dv}{dt}$.
+
+\question
+Solve the problem to obtain $t^{\star}$, the time when the projectile reaches its maximum height.  You should use a definite integral on both sides of your equation instead of adding a 
+$+C$.  See me on Thursday after class if you have questions about setting up this step.
+
+\question
+Repeat the above steps to find a function for the velocity on the trip downward.
+
+\end{questions}
+\end{document}

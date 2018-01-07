@@ -1,0 +1,87 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Retake 5}}
+            \hfill MAT 123, Summer 2016}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+
+\begin{questions}
+
+\question[10]
+Define the matrices 
+$A = \left[ \begin{array} {cc}
+1 & 6 \\
+3 & -5 \\
+-2 & 4
+\end{array} \right], 
+B = \left[ \begin{array} {cc}
+1 \\
+0
+\end{array} \right]$, and
+$C = \left[ \begin{array} {cc}
+4 & -6 \\
+1 & 2
+\end{array} \right]$.
+
+Evaluate each product, or state that it is undefined.
+\begin{parts}
+\part $AB$
+
+\vspace{\stretch{2}}
+
+\part $BA$
+
+\vspace{\stretch{2}}
+
+\part $C^2$
+
+\vspace{\stretch{4}}
+
+\end{parts}
+\newpage
+
+\question[10]
+Suppose the the costs for a printmaking firm are described by the equation
+\begin{equation*}
+C = 8.5x + 75,
+\end{equation*}
+where $y$ is number of copies made (in thousands) and $C$ is the cost (in thousands of dollars).  The corresponding equation for the firm's revenue is
+\begin{equation*}
+R = 10x.
+\end{equation*}
+How many copies does the company need to produce in order to break even?
+
+\end{questions}
+
+\end{document}

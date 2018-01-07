@@ -1,0 +1,112 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, amssymb, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\newcommand{\real}{\mathbf{R}}
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+\newcommand{\poly}{\mathbf{P}}
+\newcommand{\mnms}{M\&M's }
+
+\title{Diff EQ modeling project}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 1}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+\bigskip
+
+We conduct a series of experiments using \mnms to model some simple population dynamics.  Then we will develop the differential equations that correspond to the experiments.  
+
+\bigskip
+\textbf{Model A: Death}
+\bigskip
+
+Open the bag of \mnms and put 50 of the candies into the paper cup.  This represents the size of our initial population.  
+
+\bigskip
+Notice that each candy has the letter M printed on only one side.  For every round of the experiment, you will shake the \mnms from the paper cup onto the table.  If a candy lands with the M facing upwards, it is considered dead and removed from the population.  If it lands with the blank side facing up, it remains in the population and is returned to the cup for the next round.  
+
+\bigskip
+We are interested in what happens to this system in the long-term.
+
+\smallskip
+
+\begin{questions}
+
+\question
+Before beginning the experiment, discuss your predictions for the long-term result.  How many \mnms do you think will be left in the cup after 20 or 30 rounds?  Give a reason for your answer.
+
+\vspace{\stretch{2}}
+
+\question
+Beginning with a population of 50 on round 0, collect data for 10 rounds.  Make a table that gives the number of \mnms in your population at the end of each round.
+
+\vspace{\stretch{4}}
+
+\question
+What does the experiment show for the long-term result? Is this consistent with the prediction you gave above?
+
+\vspace{\stretch{3}}
+
+\clearpage
+
+\question
+Try to write a formula that gives a mathematical model for $a_{n+1}$, the number of \mnms in the population on turn $n+1$.  The formula will be written in terms of $a_n$.
+
+\vspace{\stretch{1}}
+
+\end{questions}
+
+
+\textbf{Model B: Death and immigration}
+\bigskip
+
+In addition to the steps described above, add 10 \mnms to the population on each round after removing the dead candy.
+
+\smallskip
+
+\begin{questions}
+
+\question
+Discuss your predictions for the long-term result.  It should be clear that this experiment is related to part A in some manner.
+
+\vspace{\stretch{2}}
+
+\question
+Again, start with a population of 50.  Run the second experiment for enough rounds to establish the long-term trend.
+
+\vspace{\stretch{4}}
+
+\question
+What does the experiment show for the long-term result? Is this consistent with the prediction you gave above?
+
+\vspace{\stretch{1}}
+
+\question
+Try to write a formula that gives a mathematical model for $b_{n+1}$, the number of \mnms in the population on turn $n+1$.  This formula will be written in terms of $b_n$.
+
+\vspace{\stretch{2}}
+
+\end{questions}
+
+\end{document}

@@ -1,0 +1,143 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Retake 8A: Rational functions}}
+            \hfill Math 1110, Fall 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\begin{questions}
+
+\question[10]
+Consider the rational function.
+\begin{align*}
+R(x) = - \dfrac{x^2 - 1}{2x^3 - 12x^2 + 18x}
+\end{align*}
+
+\begin{parts}
+\part 
+Analyze the ratio of leading terms to find the end behavior.  If the function has a horizontal asymptote or a slant asymptote, give its equation.
+
+\vspace{\stretch{3}}
+
+\part 
+Find the $x$-intercepts of the graph, if any.
+
+\vspace{\stretch{2}}
+
+\part 
+Find the equations for the vertical asymptotes, if any.
+
+\vspace{\stretch{2}}
+
+\part 
+Give the $x$-coordinates for any holes that you identify.
+
+\vspace{\stretch{2}}
+
+\part
+Based on your work on the previous parts, give the $x-$ and $y$-coordinates for an appropriate selection of test points.
+
+\vspace{\stretch{3}}
+
+\part
+Graph the function
+
+\vspace{\stretch{1}}
+\begin{center}
+\begin{asy}
+size(6cm);
+for (int i = -8; i <= 8; ++i)
+	{
+    draw((-8,i)--(8,i), gray);
+    draw((i,-8)--(i,8), gray);
+    }
+\end{asy}
+\end{center}
+\vspace{\stretch{1}}
+
+\end{parts}
+
+\clearpage 
+
+\question[10]
+Write an equation for the rational function shown in the graph.  The asymptotes are shown as dashed lines.
+\vspace{\stretch{1}}
+
+\begin{center}
+\begin{asy}
+size(10cm);
+import graph;
+for (int i = -6; i <= -3; ++i)
+	{
+    draw((i,-6)--(i,6), gray);
+    }
+for (int i = -1; i <= 1; ++i)
+	{
+    draw((i,-6)--(i,6), gray);
+    }
+for (int i = 3; i <= 6; ++i)
+	{
+    draw((i,-6)--(i,6), gray);
+    }
+    
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+
+draw((-2,7)--(-2,-7), dashed, Arrows);
+draw((2,7)--(2,-7), dashed, Arrows);
+
+pair F(real t) { 
+	return (t, t / ((t + 2)^2 * (t - 2)) );
+}
+
+path g = graph(F, -5.9, -2.302, operator ..);
+draw(g, linewidth(1));
+path g = graph(F, -1.72, 1.978, operator ..);
+draw(g, linewidth(1));
+path g = graph(F, 2.0215, 5.9, operator ..);
+draw(g, linewidth(1));
+
+dotfactor *= 2;
+dot((0,0)); 
+
+\end{asy}
+\end{center}
+\end{questions}
+\vspace{\stretch{16}}
+
+\end{document}

@@ -1,0 +1,67 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Worksheet template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Economic applications of the derivative}}}
+
+\bigskip
+
+\begin{questions}
+
+\question
+Suppose that the cost of producing $x$ items is given by the function
+\begin{align*}
+	C(x) = -0.02x^2 + 50x + 100.
+\end{align*}
+\begin{parts}
+\part
+Find functions for the average cost and the marginal cost.
+\part
+Find the average cost and the marginal cost for the first 100 items.
+\part
+Find the average cost and the marginal cost for the first 900 items.
+\end{parts}
+
+\question
+If demand for a product is given by the formula
+\begin{align*}
+D = f(p),
+\end{align*}
+then the elasticity of demand is defined to be the relationship
+\begin{align*}
+E(p) = \dfrac{dD}{dp} \dfrac{p}{D}.
+\end{align*}
+Suppose that the demand for beef is given by the function
+\begin{align*}
+D(p) = 386 - 20p.
+\end{align*}
+Find and graph the elasticity of demand for this product.
+
+\question
+If $E < -1$, then demand is said to be elastic.  Otherwise demand is inelastic.  Usinf the model in the last problem, find the prices that make demand for beef inelastic.
+
+\end{questions}
+
+\end{document}

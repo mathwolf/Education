@@ -1,0 +1,71 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 8B: Inverse functions, exponents}}
+            \hfill Fall 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\begin{questions}
+
+\question[10]
+Find the inverse of the function.
+\begin{align*}
+f(x) = \dfrac{4x - 3}{2 - x}
+\end{align*}
+You may assume that this function is one-to-one without testing it.
+
+\newpage 
+
+\question[10]
+Sketch a picture of the function 
+\begin{align*}
+y = 3 \cdot 2^{x + 1}
+\end{align*}
+by using transformations.  Show the coordinates of two or three important points on your graph.
+
+\begin{center}
+\begin{asy}
+size(12cm);
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,2 * i)--(6,2 * i), gray);
+    draw((-6,2 * i + 1)--(6,2 * i + 1), gray);
+    draw((i,-12)--(i,13), gray);
+    }
+\end{asy}
+\end{center}
+
+\end{questions}
+
+\end{document}

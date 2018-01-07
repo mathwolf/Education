@@ -1,0 +1,233 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, enumitem}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 12}}
+            \hfill MAT 201, Spring 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+\begin{questions}
+
+\question
+The graph of $f(x)$ is shown in the figure.  Sketch the graph of $f^{\prime}(x)$.
+
+\begin{multicols}{2}
+
+\begin{flushleft}
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), mediumgray);
+    draw((i,-5)--(i,5), mediumgray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$f(x)$", EndPoint, N), (0,-6)--(0,6), Arrows);
+pair F(real t) { 
+	return (t, t/(t^2 - t - 6.0) + 1);
+	return (t, (-8.0/25.0)*t^2 + (32.0/25.0)*t + 68.0/25.0);
+}
+path g = graph(F, -4.9, -2.068, operator ..);
+draw(g);
+path g = graph(F, -1.9, 2.9, operator ..);
+draw(g);
+path g = graph(F, 3.17, 4.9, operator ..);
+draw(g);
+
+\end{asy}
+\end{flushleft}
+
+\begin{flushleft}
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), mediumgray);
+    draw((i,-5)--(i,5), mediumgray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$f^{\prime}(x)$", EndPoint, N), (0,-6)--(0,6), Arrows);
+\end{asy}
+\end{flushleft}
+\end{multicols}
+
+\question
+The graph of $f^{\prime}(x)$ is shown in the figure.  Sketch the graph of $f(x)$.
+
+\begin{multicols}{2}
+
+\begin{flushleft}
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), mediumgray);
+    draw((i,-5)--(i,5), mediumgray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+pair F(real t) { 
+	return (t, (t + 1.0)*(t - 3.0));
+	return (t, (-8.0/25.0)*t^2 + (32.0/25.0)*t + 68.0/25.0);
+}
+path g = graph(F, -1.95, 3.95, operator ..);
+draw(g);
+\end{asy}
+\end{flushleft}
+
+\begin{flushleft}
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), mediumgray);
+    draw((i,-5)--(i,5), mediumgray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+\end{asy}
+\end{flushleft}
+\end{multicols}
+
+\question
+Out of question 1 and 2 above, which has a second answer?  Sketch your second answer on the  corresponding axes.
+
+\end{questions}
+
+In questions 4 to 6, sketch a graph of a function $f(x)$ that satisfies the given conditions.
+
+\begin{questions}
+\setcounter{question}{3}
+
+\question
+\begin{multicols}{2}
+\raggedcolumns
+\begin{gather*}
+f^{\prime}(-2) = 0, \> f^{\prime}(0) = 0, \> f^{\prime}(2) = 0 \\
+f^{\prime}(x) > 0 \mbox{ if } x \mbox{ is in } (-\infty,-2) \cup (0,2) \\
+f^{\prime}(x) < 0 \mbox{ if } x \mbox{ is in } (-2,0) \cup (2,\infty) \\
+f^{\prime \prime}(x) > 0 \mbox{ if } x \mbox{ is in } (-1,1) \\
+f^{\prime \prime}(x) < 0 \mbox{ if } x \mbox{ is in } (-\infty,-1) \cup (1,\infty)
+\end{gather*}
+\begin{flushleft}
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), mediumgray);
+    draw((i,-5)--(i,5), mediumgray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$f(x)$", EndPoint, N), (0,-6)--(0,6), Arrows);
+\end{asy}
+\end{flushleft}
+\end{multicols}
+
+\clearpage
+
+\question
+\begin{multicols}{2}
+\raggedcolumns
+\begin{gather*}
+f^{\prime}(-3) = 0 \\
+f^{\prime}(x) > 0 \mbox{ if } x \mbox{ is in } (-\infty,-3) \cup (1,\infty) \\
+f^{\prime}(x) < 0 \mbox{ if } x \mbox{ is in } (-3,1) \\
+\lim_{x \to 1^-} f(x) = -\infty \mbox{ and } \lim_{x \to 1^+} f(x) = -\infty \\
+f^{\prime \prime}(x) < 0 \mbox{ if } x \neq 1
+\end{gather*}
+\begin{flushleft}
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), mediumgray);
+    draw((i,-5)--(i,5), mediumgray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$f(x)$", EndPoint, N), (0,-6)--(0,6), Arrows);
+\end{asy}
+\end{flushleft}
+\end{multicols}
+
+\question
+\begin{multicols}{2}
+\raggedcolumns
+\begin{gather*}
+\mbox{the domain of } f(x) \mbox{ is } (0,\infty) \\
+f^{\prime}(x) \mbox{ is always positive} \\
+f^{\prime \prime}(x) \mbox{ is always negative}
+\end{gather*}
+\begin{flushleft}
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), mediumgray);
+    draw((i,-5)--(i,5), mediumgray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$f(x)$", EndPoint, N), (0,-6)--(0,6), Arrows);
+\end{asy}
+\end{flushleft}
+\end{multicols}
+
+\end{questions}
+
+For the functions in questions 7 to 9:
+\begin{enumerate}[label = (\alph*)]
+\item Find the domain.
+\item Give all the critical points and all the intervals where the function is increasing/decreasing.  Also classify each critical point as a local minimum, local maximum, or neither.
+\item Give all inflection points and all the intervals where the function is concave up or concave down.  
+\item Sketch the graph.
+\end{enumerate}
+
+\begin{questions}
+\setcounter{question}{6}
+
+\question
+$g(x) = x^4 - 6x^2$
+
+\question
+$A(x) = x\sqrt{x + 3}$
+
+\question
+$y(x) = (x - 1) e^{-x}$
+\end{questions}
+
+\end{document}

@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+
+\title{Worksheet template}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{gensymb, multicol, verbatim, enumitem, nicefrac}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\noindent {\sc {\bf {\Large Hyperbolas}}}
+\bigskip
+\bigskip
+
+Review: solve the problem using a system of equations.
+
+\begin{enumerate}
+	\item A plane makes a round-trip flight from New York to London.  The plane's speed on the trip 
+    	there was 220 mph.  Its speed on the way back was 200 mph.  The trip over was one hour shorter 
+        than the trip back.  How many hours did the entire trip take?
+\end{enumerate}
+
+Find the vertices, foci, and equations of the asymptotes. Then draw the graph.
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{1}
+
+	\item $9x^2 - y^2 = 9$
+    
+	\begin{flushleft}
+	\begin{asy}
+	size(6cm);
+	for (int i = -5; i <= 5; ++i)
+	{
+    	draw((-5,i)--(5,i), mediumgray);
+	    draw((i,-5)--(i,5), mediumgray);
+    }
+	draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+	draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+	\end{asy}
+	\end{flushleft}
+
+	\item $y^2 - 4x^2 = 4$ 
+    
+	\begin{flushleft}
+	\begin{asy}
+	size(6cm);
+	for (int i = -5; i <= 5; ++i)
+	{
+    	draw((-5,i)--(5,i), mediumgray);
+	    draw((i,-5)--(i,5), mediumgray);
+    }
+	draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+	draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+	\end{asy}
+	\end{flushleft}
+
+	\item $y^2 - x^2 = 3$ 
+	\begin{flushleft}
+	\begin{asy}
+	size(6cm);
+	for (int i = -5; i <= 5; ++i)
+	{
+    	draw((-5,i)--(5,i), mediumgray);
+	    draw((i,-5)--(i,5), mediumgray);
+    }
+	draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+	draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+	\end{asy}
+	\end{flushleft}
+
+	\item $4x^2 - 2 y^2 = 1$ 
+	\begin{flushleft}
+	\begin{asy}
+	size(6cm);
+	for (int i = -5; i <= 5; ++i)
+	{
+    	draw((-5,i)--(5,i), mediumgray);
+	    draw((i,-5)--(i,5), mediumgray);
+    }
+	draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+	draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+	\end{asy}
+	\end{flushleft}
+
+
+\end{enumerate}
+\end{multicols}
+
+\bigskip
+\bigskip
+
+\begin{enumerate}
+\setcounter{enumi}{5}
+	\item Find the equation of the hyperbola centered at the origin with vertices $(\pm 1, 0)$
+    	and foci $(\pm 2, 0)$.
+\end{enumerate}
+
+\newpage
+
+ANSWERS
+
+\begin{multicols}{2}
+\begin{enumerate}
+	\item 10 hours
+ 	\item Vertices: $(\pm 1, 0)$, foci: $(\pm 3.16, 0)$, asymptotes: $y = \pm 3x$
+	\item Vertices: $(0, \pm 2)$, foci: $(0, \pm 2.24)$, asymptotes: $y = \pm 2x$
+	\item Vertices: $(0, \pm 1.73)$, foci: $(0, \pm 2.45)$, asymptotes: $y = \pm x$
+	\item Vertices: $(\pm 0.5, 0)$, foci: $(\pm 0.87, 0)$, asymptotes: $y = \pm 1.41x$
+    \item $3x^2 - y^2 = 3$
+\end{enumerate}
+\end{multicols}
+\end{document}

@@ -1,0 +1,241 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{College algebra exam 3 review part 2}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Exam 3 review problems, part 2}}
+            \hfill MAT 121, Spring 2016}
+\bigskip
+\bigskip
+
+\begin{questions}
+
+\question
+Simplify the expression.  Write your answer using only positive exponents.
+
+\begin{multicols}{2}
+\begin{parts}
+\part
+$x^2y^2 \cdot \left( x^5 y^6 \right)^0$
+\smallskip
+
+\part
+$\dfrac{\left( 3y^2 \right)^2}{y^{-2}}$
+
+\columnbreak
+
+\part
+$\left( n^{-4} n^{-6} \right)^2$
+\smallskip
+
+\part
+$\dfrac{4 x^3 y^4}{\left(x y^{-1} \right)^2 \cdot x^{-3} y^3}$
+
+\end{parts}
+\end{multicols}
+
+
+\question
+
+Solve the equation.
+
+\begin{multicols}{2}
+\begin{parts}
+\part
+$2^x = 10$
+
+\part
+$e^{x+1} = 1.2$
+
+\part
+$10^{3x - 5} = -200$
+
+\columnbreak
+
+\part
+$5e^{3x} + 1 = 9$
+
+\part
+$e^{x+1} = 2^x$
+
+\end{parts}
+\end{multicols}
+
+\question
+The number of mosquitoes in a population is given by the formula
+\begin{equation*}
+	P = Ae^{kt} .
+\end{equation*}
+Initially, there are 1000 mosquitoes.  After 1 day, there are 1800 mosquitoes.  How many are there in 3 days?  How long until there are 10,000 mosquitoes?
+
+\question
+The decay of radioactive elements is described by the formula
+\begin{equation*}
+		P = A^{kt} .
+\end{equation*}
+Radium has a half-life of 1690 years.  If a sample contains 100 g of radium at the present time, how much will remain in 50 years?
+
+\question
+Give the exact value of the logarithm without using a calculator.
+
+\begin{multicols}{2}
+\begin{parts}
+\part
+$\log_3 81$
+
+\part
+$\log_{10} 0.01$
+
+\columnbreak
+
+\part
+$\ln 1$
+
+\part
+$\log_8 2$
+
+\end{parts}
+\end{multicols}
+
+\question
+Write the expression as a single logarithm.
+
+\begin{multicols}{2}
+\begin{parts}
+\part
+$3 \log_5 u + 4 \log_5 v$
+
+\part
+$\log_2 \left( \dfrac{1}{x} \right) - \log_2 \left( \dfrac{1}{x^2} \right)$
+
+\columnbreak
+
+\part
+$4 \ln \sqrt{x} + \ln \left( 5 x^2 \right) - \ln 25$
+
+\end{parts}
+\end{multicols}
+
+\question
+
+Solve the equation.
+
+\begin{multicols}{2}
+\begin{parts}
+\part
+$\log_3 (x-3) = 2$
+
+\part
+$\log_6 (x+3) + \log_6 (x+4) = 1$
+
+\part
+$\ln y = -1$
+
+\columnbreak
+
+\part
+$2 \log_5 x = 3 \log_5 4$
+
+
+\part
+$\ln (2x - 5) - \ln (x+1) = 0$
+
+\end{parts}
+\end{multicols}
+
+\newpage
+\question
+
+Solve each system of equations.
+
+\begin{multicols}{2}
+\begin{parts}
+\part
+$3x + 4y = 7$ \\ $-5x + 2y = 10$
+
+\part
+$x - 4y = 9$ \\ $2x + 5y = 5$
+
+\part
+$4x - 8y = 12$ \\ $-x + 2y = 3$
+
+\part
+$2x + y = 1$ \\ $3x - 6y = 4$
+
+\columnbreak
+
+\part
+$x - 3y = 8$ \\ $-2x + 6y = 3$
+
+\part
+$3x + y = -5$ \\ $x^2 + y^2 = 5$
+
+\part
+$2x + y = 16$ \\ $xy = 4$
+
+\end{parts}
+\end{multicols}
+
+\question
+The sum of two numbers is 23.  Their difference is 17.  What are the numbers?
+
+\question
+A total of \$5000 is invested in two accounts.  The first account pays 3\% per year and the
+second account pays 3.5\% per year.  In the first year the total interest paid was \$167.  Find the amount invested in each type of account.
+
+\question
+Two students live 240 miles apart.  They leave their houses at the same time and drive directly toward each other.  The first student drives 70 mph, and the second student drives 80 mph.  How much time passes before the students meet?
+
+\question
+A boat headed downstream on a river takes 4 hours to cover 80 miles.  The same trip upstream takes 5 hours.
+Find the speed of the river and the speed of the boat in still water.
+
+\question
+Graph the solution to each system of inequalities.
+
+\begin{multicols}{2}
+\begin{parts}
+\part
+$y \le 3x - 4$ \\ $x \ge 0$
+
+\part
+$x - y < 3$ \\ $x + y < 5$
+
+\part
+$2x + y \ge 4$ \\ $3x - 5y \le 15$
+
+\columnbreak
+
+\part
+$x \le 5$ \\ $y > 1$
+
+\part
+$x^2 - y < 4$ \\ $x + y < 2$
+
+\end{parts}
+\end{multicols}
+
+\end{questions}
+
+\end{document}

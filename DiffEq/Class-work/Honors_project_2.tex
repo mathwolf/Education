@@ -1,0 +1,75 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, enumitem, gensymb}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Diff Eq honors project}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+\noindent {\sc {\bf {\Large Differential equations honors project}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+
+\bigskip
+
+\textbf{Finishing the 1D model} \bigskip
+
+We finish the one dimensional model by finding functions for position on both parts of the trip.  For the trip up, you will need to integrate from $v_0$ to $v$ instead of just $v_0$ to $0$.  Then solve to get a formula for $v$ as a function of $t$.  We know that this formula gives the height $y$ of the projectile for $0 \le t \le t^{\star}$.
+
+\bigskip
+I found it helpful to simplify the algebra along the way.  For example, I wrote the constant $\alpha$
+in place of $\sqrt{\dfrac{gk}{m}}$.  You should make similar substitutions as needed throughout your work.
+
+\bigskip
+The formula for $y$ can be used to calculate $y_{\textnormal{max}}$, the maximum height of the potato.  
+
+\bigskip
+The steps are similar for the trip down.  Solve your equation for $v$ and integrate to get an expression for $y$.  A substitution such as
+\begin{align*}
+	u = t - t^{\star}
+\end{align*}
+is helpful here.  
+
+\bigskip
+
+\textbf{Two dimensional motion} \bigskip
+\newline
+We can use the 1D model for the motion of the potato in the $y$-direction.  For simplicity, assume that we are launching the potato at a $45 \degree$ angle, and use this fact to split the initial velocity $v_0$ into $x-$ and $y-$components.
+
+\bigskip
+Write and solve the differential equation for the motion of the potato in the $x$-direction.
+
+\bigskip
+Finally, write a formula for the range $R$ of the potato.  Recall that the range is the distance traveled in the $x$-direction before the projectile hits the ground.
+
+\bigskip
+\textbf{Results} 
+\bigskip
+\newline
+Now we will put some numbers into the model.  We will just aim for one significant digit since this is our first estimate.  So use $c_w = 0.2$ as the drag coefficient.  The density of air is about 1 $\textnormal{kg}/\textnormal{m}^3$.  You need to to estimate the cross-sectional area and mass of your projectile, since I am not sure what you were using.  Finally, the magnitude of acceleration due gravity is  10 $\textnormal{m}/\textnormal{s}^2$.
+
+\bigskip
+With these parameters, we can consider $R$ as a function of $v_0$, the initial velocity.  Make a graph that compares $R$ and $R_0$ for different values of $v_0$.  Here $R_0$ is the range that you calculate for the given parameters based on a Physics I model that does not include air resistance.  $R$ is the range that you found above using your differential equations setup.
+
+\bigskip
+E-mail me if you have any questions or once you are done.  Did you make any measurements last fall when you tested your cannon?
+\end{document}

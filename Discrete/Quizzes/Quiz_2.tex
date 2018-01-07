@@ -1,0 +1,105 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 2: Functions and inequalities}}
+            \hfill MAT 123, Summer 2016}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+
+\begin{questions}
+
+\question[5]
+Find the equation of the line passing through the points $(-3,5)$ and $(1,-1)$.
+
+\vspace{\stretch{3}}
+
+\question[5]
+Graph $y = 5 - x^2$.
+
+\vspace{\stretch{1}}
+
+\begin{asy}
+size(8cm);
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), gray);
+    draw((i,-5)--(i,5), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+
+\end{asy}
+
+\vspace{\stretch{2}}
+
+\newpage
+
+\question[5]
+
+Is the graph in the figure the graph of a function? Give a reason for your answer.
+
+\bigskip 
+
+\begin{center}
+\begin{asy}
+size(8cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), gray);
+    draw((i,-6)--(i,6), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (4.1*cos(t), t);
+	return (t, (-8.0/25.0)*t^2 + (32.0/25.0)*t + 68.0/25.0);
+}
+path g = graph(F, -5.5, 5.5, operator ..);
+draw(g);
+
+\end{asy}
+\end{center}
+
+\vspace{\stretch{1}}
+
+\question[5]
+Solve $3 (2-x) - 2 \le 2x - 1$.  Make a picture of your solutions on a number line, and write the answer using interval notation.
+
+\vspace{\stretch{6}}
+
+\end{questions}
+
+\end{document}

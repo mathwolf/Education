@@ -1,0 +1,83 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Retake 1: Linear equations}}
+            \hfill MAT 123, Summer 2016}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+
+\begin{questions}
+
+\question[5]
+Solve $3x + 25 = 5x$.
+
+\vspace{\stretch{3}}
+
+\question[5]
+
+Solve $B = \dfrac{1}{2} \left( h + a \right)$ for $a$.
+
+\vspace{\stretch{5}}
+
+\newpage
+
+\question[5]
+
+Find the slope of the line passing through the points $(-3,3)$ and $(3,-3)$.
+
+\vspace{\stretch{3}}
+
+\question[5]
+Graph the line $3x - 4y = -16$.
+
+\vspace{\stretch{1}}
+
+\begin{asy}
+size(8cm);
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), mediumgray);
+    draw((i,-5)--(i,5), mediumgray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+
+\end{asy}
+
+\vspace{\stretch{1}}
+
+\end{questions}
+
+\end{document}

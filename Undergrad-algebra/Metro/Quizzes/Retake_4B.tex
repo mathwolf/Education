@@ -1,0 +1,100 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Retake 4B: Symmetry and functions}}
+            \hfill Math 1110, Fall 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+
+\begin{questions}
+
+\question[5]
+Part of a graph is shown below.  Suppose you know this graph is symmetric with respect to the $y$-axis.  Use this information to sketch the remaining part of the graph.
+
+\vspace{\stretch{1}}
+
+\begin{asy}
+size(8cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), gray);
+    draw((i,-5)--(i,5), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+pair F(real t) { 
+	return ((t+1)^2, t);
+}
+path g = graph(F, -1, 1.15, operator ..);
+draw(g);
+
+\end{asy}
+
+\vspace{\stretch{1}}
+
+\question[5]
+Consider the following equation.
+\begin{align*}
+y^3 = x^3 - x
+\end{align*}
+Test this equation to see if the solutions are symmetric with respect to the $x$-axis, the $y$-axis, or the origin.
+
+\vspace{\stretch{3}}
+
+\newpage
+
+\question[10]
+Define the function $h(x) = 4 - x^2$. Evaluate each expression, and simplify your answer as much as possible.
+
+\begin{parts}
+
+\part
+$h(-3)$
+\vspace{\stretch{2}}
+
+\part
+$h(5)$
+\vspace{\stretch{2}}
+
+\part
+$h(x+2)$
+\vspace{\stretch{3}}
+
+\end{parts}
+
+\end{questions}
+
+\end{document}

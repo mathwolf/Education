@@ -1,0 +1,102 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac, enumerate}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Differential equations final exam review - SP 17}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Final exam review}}
+            \hfill MAT 265, Spring 2017}
+\newline
+\newline
+
+\subsection*{First order problems}
+
+You should be able to use the following techniques to solve a first order equation. \\
+
+Separation of variables \\
+Integrating factors \\
+Substitutions, including the Bernoulli method \\
+
+Also be prepared to write the differential equation that corresponds to a written description.  The specific applications that we worked with were population growth, radioactive decay, and mixtures of solutions.  You should also be able to use a phase line to discuss the solutions of an autonomous problem.
+
+\subsection*{Second order problems}
+
+Use the following techniques to solve a second order problem.\\
+
+Method of undetermined coefficients \\
+Variation of parameters \\
+
+You will need to set up an equation for a mass-spring system.  This includes understanding how the terms of the differential equation corresponds to the parameters of the physical system.  
+
+\subsection*{Laplace transforms and power series methods}
+
+Find the transform of a simple function using the definition, and use a table of transforms to solve a more complicate problem.  Understand how to solve equations using unit step functions or periodic functions.  You will also need to incorporate an impulse (like a hammer strike) into a mass-spring model. \\
+
+Use the power series method to solve a differential equation with variable coefficients, similar to the question on Exam 3.
+
+\subsection*{Systems of differential equations}
+
+Use the eigenvalue method to solve a system of differential equations.  You should be prepared for problems with real distinct eigenvalues and problems with complex conjugate eigenvalues. \\
+
+Here are some practice problems on the last topic.
+
+\begin{questions}
+
+\question
+$\dfrac{dx}{dt} = -4x + 2y \smallskip \\ \dfrac{dy}{dt} = 2x - 4y$
+
+\clearpage
+
+\question
+$\dfrac{dx}{dt} = x + 2y \smallskip \\ \dfrac{dy}{dt} = -2x + y$
+
+\question
+$\dfrac{dx}{dt} = 3x \smallskip \\ \dfrac{dy}{dt} = 6x  -3y \smallskip \\ x(0) = 2, \> y(0) = -5$
+
+\question
+$\dfrac{dx}{dt} = 4x + 5y \smallskip \\ \dfrac{dy}{dt} = -5x - 4y \smallskip \\ x(0) = 0, \> y(0) = 3$
+
+\end{questions}
+
+\bigskip
+SOLUTIONS
+
+\begin{questions}
+\question
+$x(t) = C_1e^{-6t} + C_2 e^{-2t} \\
+y(t) = -C_1e^{-6t} + C_2 e^{-2t}$
+
+\question
+$x(t) = C_1 e^t \sin 2t - C_2 e^t \cos 2t \\
+y(t) = C_1 e^t \cos 2t + C_2 e^t \sin 2t$
+
+\question
+$x(t) = 2 e^{3t} \\
+y(t) = -7 e^{-3t} + 2 e^{3t}$
+
+\question
+$x(t) = 5 \sin 3t \\
+y(t) = 3 \cos 3t - 4 \sin 3t$
+
+\end{questions}
+\end{document}

@@ -1,0 +1,584 @@
+  \documentclass[addpoints, 12pt]{exam}
+
+  \setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+  \setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+  \usepackage{amsmath,color,graphicx, multicol, nicefrac, enumitem}
+  \usepackage[inline]{asymptote}
+
+  \nofiles
+
+  \setlength{\parindent}{0in}
+
+  \pagestyle{plain}
+
+  \title{Final review 3 - CU 1110}
+  \author{Wray}
+  \begin{document}
+
+  \begin{asydef}
+  //
+  // Global Asymptote definitions can be put here.
+  //
+  usepackage("bm");
+  texpreamble("\def\V#1{\bm{#1}}");
+  \end{asydef}
+
+
+
+  \noindent {\sc {\bf {\Large Final exam review - Part 3}}
+              \hfill Math 1110, Fall 2017}
+  \bigskip
+  \bigskip
+
+\subsubsection*{Lines, parabolas, and circles}
+
+\begin{questions}
+
+\question
+Find the equation of the line with slope $\nicefrac{8}{7}$ and $y$-intercept $\nicefrac{5}{7}$.
+
+\question
+Find the equation of the line with slope $- \nicefrac{2}{3}$ and $x$-intercept 4.
+
+\question
+Find the equation of the line containing the points $(4,1)$ and $(-2,-1)$.
+
+\question
+Given the point $(1,-1)$ and the line $2x + 3y = 4$, find the equation for line passing through the point that is parallel to the given line.  Then find the equation of the line passing through the point that is perpendicular to the given line.
+
+\question
+Given the point $(1,-1)$ and the line $x = 4$, find the equation for line passing through the point that is parallel to the given line.  Then find the equation of the line passing through the point that is perpendicular to the given line.
+
+\end{questions}
+
+For each of the following parabolas:
+\begin{enumerate}[label = (\alph*)]
+\item Determine if the parabola opens up or down.
+\item Give the coordinates of the vertex.
+\item Give the equation for the axis of symmetry.
+\end{enumerate}
+
+\begin{questions}
+\setcounter{question}{5}
+
+\question 
+$y = x^2$
+
+\question
+$y = -x^2 - 8x -13$
+
+\question
+$f(x) = 2x^2 - 16x + 33$
+
+\bigskip
+
+\question
+Graph the circle $(x + 1)^2 + (y - 2)^2 = 16$.
+
+\question
+Give the center and radius for the circle $x^2 + y^2 + 14x - 12y + 4 = 0$.
+
+\end{questions}
+
+\subsubsection*{Polynomials and rational functions}
+
+\begin{questions}
+\setcounter{question}{10}
+
+\question
+Use the remainder theorem to determine if $(x - 2)$ is a factor of 
+$x^3 - x^2 - x - 2$.
+
+\question
+List all possible rational roots of the polynomial function $f(x) = 5x^3 - 2x^2 + 20x - 8$.  You do \textit{not} need to divide the roots to determine which ones are factors.
+
+\question
+Find the term containing $x^5$ in the expansion of $(x+1)^{10}$.
+
+\question
+Use the binomial theorem to find $(2x - 3)^4$.
+
+\end{questions}
+
+\clearpage
+
+For the polynomial functions in each graph:
+\begin{enumerate}[label = (\alph*)]
+\item Determine if the function has even or odd degree.
+\item Determine if the leading term has a positive or negative coefficient.
+\end{enumerate}
+
+\begin{questions}
+\setcounter{question}{14}
+\begin{multicols}{2}
+
+\question {\color{white} a} \bigskip \\ 
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), gray);
+    draw((i,-6)--(i,6), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (t, (t + 2) * t * (t - 3) * .1);
+}
+path g = graph(F, -4.02, 4.77, operator ..);
+draw(g);
+
+\end{asy}
+
+\question {\color{white} a} \\
+
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), gray);
+    draw((i,-6)--(i,6), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (t, (t - 2)^2 - 1);
+}
+path g = graph(F, -0.59, 4.59, operator ..);
+draw(g);
+
+\end{asy}
+
+\question {\color{white} a} \\
+
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), gray);
+    draw((i,-6)--(i,6), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (t, -(t + 2) * (t+3)* (t-1) * (t - 3) * .1);
+}
+path g = graph(F, -3.89, 3.59, operator ..);
+draw(g);
+
+\end{asy}
+
+\question {\color{white} a} \\
+
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), gray);
+    draw((i,-6)--(i,6), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (t, -(t + 2) * t^2 * (t - 3)^2 * .05);
+}
+path g = graph(F, -2.56, 4.07, operator ..);
+draw(g);
+
+\end{asy}
+
+\end{multicols}
+\end{questions}
+
+Find the $x$-intercepts for each of the following polynomials.  Then sketch the graph.
+
+\begin{questions}
+\setcounter{question}{18}
+\question
+$P(x) = -x^4 + x^3 +2x^2$
+
+\question
+$f(x) = x^3 + 11x^2 + 35x + 32$
+
+\end{questions}
+
+For each of the following functions:
+\begin{enumerate}[label = (\alph*)]
+\item Give the coordinates of the $y$-intercept, if any.
+\item Give the coordinates of the $x$-intercepts, if any.
+\item Give the equations for the vertical asymptotes, if any.
+\item Analyze the ratio of leading terms and determine if the equation has a horizontal asymptote or a slant asymptote.  If it does, give the equation
+\item Give the coordinates of any holes.
+\item Sketch the graph.  Make sure the your $y$-coordinates have the correct sign.
+\end{enumerate}
+
+\clearpage
+
+\begin{questions}
+\setcounter{question}{20}
+
+\question
+$R(x) = \dfrac{3}{x^2 - 4x}$
+
+\question
+$f(x) = \dfrac{x^3}{x^2 + x - 6}$
+
+\question
+$g(x) = \dfrac{x^2 - 9}{x^2 - 2x - 8}$
+
+\end{questions}
+
+\subsubsection*{Applications}
+
+\begin{questions}
+\setcounter{question}{23}
+
+\question
+A cannonball is fired from the top of a cliff.  Its height is described by the function
+\begin{align*}
+h(x) = \dfrac{-32}{2500} x^2 + x + 200,
+\end{align*}
+where $x$ is the horizontal distance from the cliff (in feet), and $h$ is the vertical distance above the ground (also in feet).
+\begin{parts}
+\part 
+How high is the cannonball at the time it is launched?
+
+\part 
+What is the maximum height of the cannonball?
+
+\part 
+How far is the cannonball from the cliff at the time it hits the ground?
+\end{parts}
+
+\question
+A copy shop charges customers a flat fee of \$10 per job plus an additional 20 cents per page. 
+\begin{parts}
+\part 
+Write a function giving the total cost of a job as function of the number of pages.  So $x$ will be the number of pages, and $y$ will be dollars.
+
+\part
+If I am charged \$23.80, how many pages did I copy?
+\end{parts}
+
+\question 
+The number of bacteria in a sample grows according to the function
+\begin{align*}
+N(t) = 1000e^{0.01t},
+\end{align*}
+where $t$ is time in hours, and $N$ is the number of bacteria.
+
+\begin{parts}
+\part 
+How many bacteria are present at time $t=0$?
+
+\part 
+What is the population after 4 hours?
+
+\part 
+When does the number of bacteria reach 1700?
+
+\part 
+How long does it take the population to double?
+
+\end{parts}
+
+\question
+Let $P = (x,y)$ be a point on the graph of $y = -x^2 + 5$.  Find the function that gives the distance from the origin $(0,0)$ to $P$ as a function of $x$.
+
+\question
+A school group is selling gold and silver tickets for a fundraiser.  On Monday, the group sold 4 silver tickets and 5 gold tickets for a total of \$102.  The next day they sold 7 silver tickets and 5 gold tickets for a total of \$126.  Find the cost of each type of ticket.
+
+\question
+The half-life of radium is 1690 years.  If 10 g are present now, how much will remain in 1000 years?
+
+\end{questions}
+
+\clearpage 
+
+SOLUTIONS
+
+\bigskip
+\bigskip
+
+\begin{questions}
+\begin{multicols}{2}
+
+\question 
+$y = \dfrac{8}{7} x + \dfrac{5}{7}$
+
+\question
+$y = - \dfrac{2}{3} x + \dfrac{8}{3}$
+
+\question
+$y = \dfrac{1}{3} x - \dfrac{1}{3}$
+
+\question
+parallel: $y = - \dfrac{2}{3} x - \dfrac{1}{3}$ \\
+perpendicular: $y = \dfrac{3}{2} - \dfrac{5}{2}$
+
+\question
+parallel: $x = 1$ \\
+perpendicular: $y = -1$
+
+\question
+up \\
+$(0,0)$ \\
+$x = 0$
+
+\question
+down \\
+$(-4,3)$ \\
+$x = -4$
+
+\question
+up \\
+$(4,1)$ \\
+$x = 4$
+
+\question {\color{white} a}
+
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), gray);
+    draw((i,-6)--(i,6), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (-1 + 4*sin(t), 2 + 4*cos(t));
+}
+path g = graph(F, 0, 6.29, operator ..);
+draw(g);
+
+\end{asy}
+
+\question
+Center: $(-7,6)$ \\
+Radius: $\sqrt{89}$
+
+\question
+Yes
+
+\question
+$\pm 1, \pm 2, \pm 4, \pm 8, \pm \dfrac{1}{5}, \pm \dfrac{2}{5}, \pm \dfrac{4}{5}, 
+\pm \dfrac{8}{5}$
+
+\question
+$252x^5$
+
+\question
+$16x^4 - 96x^3 + 216x^2 - 216x + 81$
+
+\question
+odd, positive
+
+\question
+even, positive
+
+\question
+even, negative
+
+\question
+odd, negative
+
+\question -1, 0, 2
+
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), gray);
+    draw((i,-6)--(i,6), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (t, -t^4 + t^3 +2*t^2);
+}
+path g = graph(F, -1.61, 2.32, operator ..);
+draw(g);
+
+\end{asy}
+
+\question
+$-6.16, -3.23, -1.61$
+
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -11; i <= 11; ++i)
+	{
+    draw((-11,i)--(11,i), gray);
+    draw((i,-11)--(i,11), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-12,0)--(12,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-12)--(0,12), Arrows);
+pair F(real t) { 
+	return (t, t^3 + 11*t^2 + 35*t + 32);
+}
+path g = graph(F, -6.75, -0.79, operator ..);
+draw(g);
+
+\end{asy}
+
+\question
+\begin{parts}
+\part none
+\part none
+\part $x = 0, x = 4$
+\part $y = 0$
+\part none
+
+\clearpage 
+
+\part {\color{white} a}
+
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((i,-6)--(i,6), gray);
+    draw((-6,i)--(6,i), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (t, 3 / (t^2 - 4*t));
+}
+path g = graph(F, -5.7, -0.13, operator ..);
+draw(g);
+path g = graph(F, 0.14, 3.86, operator ..);
+draw(g);
+path g = graph(F, 4.13, 5.7, operator ..);
+draw(g);
+
+\end{asy}
+
+\end{parts}
+
+\question
+\begin{parts}
+\part $(0,0)$
+\part $(0,0)$
+\part $x = -3, x = 2$
+\part y = x + 1
+\part none
+\part {\color{white} a}
+
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -11; i <= 11; ++i)
+	{
+    draw((i,-11)--(i,11), gray);
+    draw((-11,i)--(11,i), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-12,0)--(12,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-12)--(0,12), Arrows);
+pair F(real t) { 
+	return (t, t^3 / (t^2 + t - 6));
+}
+path g = graph(F, -8.58, -3.99, operator ..);
+draw(g);
+path g = graph(F, -2.63, 1.87, operator ..);
+draw(g);
+path g = graph(F, 2.19, 10.7, operator ..);
+draw(g);
+
+\end{asy}
+
+\end{parts}
+
+\question
+\begin{parts}
+\part $\left( 0, \nicefrac{9}{8} \right)$
+\part $(-3,0), (3,0)$
+\part $x = -2, x = 4$
+\part $y = 1$
+\part none
+\part {\color{white} a}
+
+\begin{asy}
+size(6cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((i,-6)--(i,6), gray);
+    draw((-6,i)--(6,i), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (t, (t^2 - 9) / (t^2 - 2*t - 8) );
+}
+path g = graph(F, -5.7, -2.13, operator ..);
+draw(g);
+path g = graph(F, -1.83, 3.83, operator ..);
+draw(g);
+path g = graph(F, 4.26, 5.7, operator ..);
+draw(g);
+
+\end{asy}
+
+\end{parts}
+
+\question 
+\begin{parts}
+\part
+200 feet
+
+\part
+$219.5$ feet
+
+\part 
+170 feet
+
+\end{parts}
+
+\question
+\begin{parts}
+\part 
+$y = 0.2x + 10$
+
+\part 
+69 pages
+
+\end{parts}
+
+\question
+\begin{parts}
+\part 
+1000
+
+\part 
+1041
+
+\part
+13.3 hours
+
+\part 
+17.3 hours
+
+\end{parts}
+
+\question
+$d(x) = \sqrt{x^4 - 9x^2 + 25}$
+
+\question
+8 silver, 14 gold
+
+\question
+6.64 g
+\end{multicols}
+\end{questions}
+\end{document}

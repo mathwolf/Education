@@ -1,0 +1,237 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Finite exam 3 review}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Exam 3 review problems}}
+            \hfill MAT 121, Spring 2016}
+\bigskip
+\bigskip
+
+\textbf{Sets}
+\bigskip
+
+Define the sets $A = \left\lbrace 3, 6, 9 ,12 \right\rbrace$ and 
+$B = \left\lbrace 2, 4, 6, 8, 10, 12 \right\rbrace$, and $C = \left\lbrace -2, -1 \right\rbrace$.  Write the following sets.
+
+\begin{questions}
+
+\question
+$A \cup B$
+
+\question
+$A \cap B$
+
+\question
+$B \cap C$
+
+\question
+$A \cap B^{\prime}$
+
+\end{questions}
+
+\textbf{Basic probability}
+\begin{questions}
+\setcounter{question}{4}
+\question
+Suppose we draw one card from a deck.
+
+\begin{parts}
+\part
+What is the probability that we draw a black card?
+
+\part
+What is the probability that we draw a queen?
+
+\part
+What is the probability that we draw a black queen?
+
+\part
+What is the probability that we draw a card that is black or a queen?
+
+\part
+What is the probability that we draw a card that is neither black nor a queen?
+
+\end{parts}
+
+\question
+We roll two dice.
+
+\begin{parts}
+\part
+What is the probability that the first die shows an even number?
+
+\part
+What is the probability that the sum of the two dice is 10?
+
+\part
+What is the probability that the first die shows an even number and the sum of the two dice is 10?
+
+\part
+What is the probability that the first die is even or the sum of the two dice is 10?
+
+\end{parts}
+
+\question
+A computer chip is made by connecting one circuit from factory A with a second circuit from factory B.  The circuits from factory A have a 25\% defect rate, and factory B has a 10\% defect rate.  What is the probability that a computer chip chosen at random has at least one defect?
+
+\end{questions}
+
+
+\textbf{Permutations and combinations}
+\begin{questions}
+\setcounter{question}{7}
+\question
+In a class of 9 children, 3 children will be chosen for the roles of president, vice-president, and treasurer.  In how many different ways can these roles be assigned?
+
+\question
+From a team of 10 people, we are going to choose 3 people to fly to Australia.  In how many ways can this group be chosen?
+
+\clearpage
+\question
+The letters A, B, C, and D are put in a random order to make a secret code.  
+
+\begin{parts}
+\part 
+How many different codes are there?
+
+\part
+How many of these codes begin with the letter A?
+
+\part
+If we choose a code at random, what is the probability that it begins with the letter B?
+
+\part
+What is the probability that a code begins with a letter other than B?
+
+\end{parts}
+\question
+Five cards will be dealt from a deck to make a poker hand.
+
+\begin{parts}
+\part 
+How many different five-card hands are there?
+
+\part
+How many different hands contain all clubs?
+
+\part
+How many different hands contain 3 aces and 2 kings?
+
+\part
+Find the probabilities for these two hands.  Which one is more likely?
+
+\part
+What is the probability that a hand contains at least one card that is not a club?
+
+\end{parts}
+
+\end{questions}
+
+\textbf{Conditional probability and Bayes' formula}
+
+\begin{questions}
+\setcounter{question}{11}
+\question
+We have a jar with 1 blue chip and 4 white chips.  We draw two chips from the jar.  
+\begin{parts}
+\part
+What is the probability that the first chip is blue?  What is the probability that the first chip is white?
+
+\part
+If the first chip drawn is blue, what is the probability that the second chip is also blue?
+
+\part
+If the first chip is white, what is the probability that the second chip is blue?
+
+\part
+What is the probability of drawing two white chips?
+
+\part
+What is the probability of drawing two blue chips?
+
+\part
+What is the probability of drawing a white chip first and then a blue chip?
+
+\part
+What is the probability that the second chip is blue?
+
+\part
+What is the probability that the second chip is white? 
+
+\part
+If the second chip is blue, what is the probability that the first chip was white?
+
+\part
+If the second chip is white, what is the probability that the first chip was blue?
+
+\end{parts}
+
+\question
+First, we flip a coin.  If the coin shows heads, we draw a card from the deck at random.  If the coin shows tails, we pull out the queen of hearts.
+\begin{parts}
+\part
+If the coin shows heads, what is the probability of getting a heart?
+
+\part
+If the coin shows tails, what is the probability of getting a heart?
+
+\part
+What is the probability of flipping heads and getting a heart?
+
+\part
+What is the probability of flipping tails and getting a heart?
+
+\part
+What is the probability of getting a heart?
+
+\part
+If we have a heart, what is the probability that we flipped a tail?
+
+\part
+If we have a heart, what is the probability that we flipped a head?
+
+\end{parts}
+
+\clearpage
+\question
+It is estimated that 3 out of every 10,000 people have a certain blood disease.  A new test for this disease has been developed that is 98\% accurate.  If a randomly-chosen patient gets a positive test result, what is the probability that he has the disease?
+
+\end{questions}
+
+\textbf{Expected value}
+
+\begin{questions}
+\setcounter{question}{14}
+\question
+An urn contains 10 green chips and 5 red chips.  You draw one chip.  If the chip is red, you win \$8.  If the chip is green, you pay \$5.  What is the expected value of drawing a chip?
+
+\question 
+To play a card game you must pay \$5.  You draw a card from a deck, and if it is a king you win \$50.  What is the expected value for one play of the game?
+
+\question
+The cost of developing a new product is \$2.5 million.  There is a 12\% chance that this product will be successful.  If it does succeed, the company will receive \$30 million.  Would you recommend that the company develop the product?
+\end{questions}
+
+\end{document}

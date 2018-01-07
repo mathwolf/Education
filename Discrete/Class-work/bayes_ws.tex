@@ -1,0 +1,117 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Bayes' formula}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Bayes' formula}}
+            \hfill MAT 123, Summer 2016}
+\bigskip
+\bigskip
+
+To use Bayes' formula, we start with the definition of conditional probability.
+\begin{gather*}
+P(B \> \vert A) = \dfrac{P(A \cap B)}{P(A)}
+\end{gather*}
+Then we expand each part of the fraction, again using conditional probability.
+\begin{gather*}
+P(A \cap B) = P(A \> \vert B) P(B) \\
+P(A) = P(A \> \vert B) P(B) + P(A \> \vert B^{\prime}) P(B^{\prime})
+\end{gather*}
+
+\begin{questions}
+\question
+We have a jar with 5 blue chips and 6 yellow chips.  We draw two chips from the jar.  
+\begin{parts}
+\part
+If the second chip is blue, what is the probability that the first chip was blue?
+
+\part
+If the second chip is blue, what is the probability that the first chip was yellow?
+
+\part
+If the second chip is yellow, what is the probability that the first chip was blue?
+
+\end{parts}
+
+\question
+We flip a coin.  If the coin shows heads, we roll a die.  If the coin shows tails, we turn the die so that it reads 6.
+\begin{parts}
+\part
+If the die shows 6, what is the probability that we flipped a tail?
+
+\part
+If the die shows 6, what is the probability that we flipped a head?
+
+\part
+If the die shows 3, what is the probability that we flipped a tail?
+
+\end{parts}
+
+\question Two factories make parts for an automaker.  A part is equally likely to come from either of the factories.  Factory A has a defect rate of 1\%, and factory B has a defect rate of 4\%. If a part is defective, what is the probability that it was made in factory B?
+
+\question
+An urn contains 5 blue chips, 7 red chips, and 3 white chips.  Two chips are drawn.
+
+\begin{parts}
+\part
+If the second chip is blue, what is the probability that the first chip was blue?
+
+\part
+If the second chip is blue, what is the probability that the two chips are different colors?
+
+\end{parts}
+
+\end{questions}
+
+\bigskip
+\bigskip
+ANSWERS
+\begin{multicols}{3}
+\begin{questions}
+\question 
+\begin{parts}
+\part $\nicefrac{2}{5}$
+\part $\nicefrac{3}{5}$
+\part $\nicefrac{1}{2}$
+\end{parts}
+
+\question 
+\begin{parts}
+\part $\nicefrac{6}{7}$
+\part $\nicefrac{1}{7}$
+\part 0
+\end{parts}
+
+\question 
+$\nicefrac{4}{5}$ = 80 \%
+
+\question 
+\begin{parts}
+\part $\nicefrac{12}{21}$
+\part $\nicefrac{9}{21}$
+\end{parts}
+
+\end{questions}
+\end{multicols}
+\end{document}

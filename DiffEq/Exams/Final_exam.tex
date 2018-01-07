@@ -1,0 +1,120 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac, enumerate}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Differential equations final exam - SP 17}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Final exam}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+\bigskip
+
+\begin{questions}
+
+\question[10]
+Find the general solution of the equation.
+
+\begin{parts}
+\part
+$\dfrac{dy}{dt} = ty^2 + t$
+\vspace{\stretch{2}}
+
+\part
+$y^{\prime \prime}  - 6y^{\prime} + 9y = 0$
+\vspace{\stretch{3}}
+\clearpage
+
+\end{parts}
+
+\question[12]
+Initially, a tank contains 5000 liters of pure water.  A solution containing 2 kilograms of salt per liter is pumped into the tank at a rate of 15 liters per minute. A well-stirred mixture is drained from the tank at the same rate, 15 liters per minute.  How many kilograms of salt are in the tank after one hour?
+\clearpage
+
+\question[22]
+A mass of 3 kilograms is connected to spring with constant 6 newtons per meter.  The system is free from damping and friction.  The mass experiences a driving force of strength
+$\cos 2t$, where $t$ is time in seconds.  This force is directed upward at time $t=0$.  At the same time ($t=0$), the mass is in its equilibrium position with a velocity of 1 meter per second downward.  Find the equation of motion for the system.
+\clearpage 
+
+\question[10]
+Find the Laplace transform of each function.
+\begin{parts}
+\part
+$f(t) = t e^{-4t}$
+\vspace{\stretch{2}}
+
+\part
+$g(t) = 3 \sin \dfrac{t}{2}$
+\vspace{\stretch{2}}
+
+\part
+$h(t) = \begin{cases}
+	3t & \mbox{if } t < 2 \\
+    6 & \mbox {if } t \ge 2
+\end{cases}$
+\end{parts}
+\vspace{\stretch{3}}
+\clearpage
+
+\question[16]
+Find the inverse Laplace transform of each function.
+\begin{parts}
+\part
+$H(s) = \dfrac{10}{s + 12}$
+\vspace{\stretch{2}}
+
+\part
+$F(s) = \dfrac{s+2}{s^2+2s+5}$
+\vspace{\stretch{2}}
+
+\part
+$Y(s) = \dfrac{1}{s^2+4} e^{-5 \pi s}$
+\end{parts}
+\vspace{\stretch{3}}
+\clearpage
+
+\question[14]
+Use the power series method to find the general solution to
+\begin{align*}
+\left( \cos t \right) y^{\prime} + y = 0.
+\end{align*}
+Write the first four nonzero terms of your answer.
+\clearpage
+
+\question[16]
+Find the general solution to the system.
+\begin{align*}
+\dfrac{dx}{dt} & = x - 8y \smallskip \\
+\dfrac{dy}{dt} & = x - 3y
+\end{align*}
+\clearpage
+
+\question
+Find the solution to the IVP (10 points bonus)
+\begin{align*}
+\dfrac{dx}{dt} & = 2x + 2y && x(0) = 0 \smallskip \\
+\dfrac{dy}{dt} & = x + 3y && y(0) = 1
+\end{align*}
+\clearpage
+
+\end{questions}
+\end{document}

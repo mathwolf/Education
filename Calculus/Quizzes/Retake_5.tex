@@ -1,0 +1,84 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Retake 5}}
+            \hfill MAT 201, Spring 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+Find the derivative for each of the following functions.  Apply the theorems from class instead of beginning with the definition.
+
+\begin{questions}
+
+\question[4]
+$y = \sqrt{x} + 2x^2 - 13e^x$
+\vspace{\stretch{2}}
+
+\question[4]
+$f(x) = 7x^4 - 5x^3 + 11x^2 - 5x + 3$
+\vspace{\stretch{2}}
+
+\question[4]
+$g(x) = \sqrt{32}$
+\vspace{\stretch{3}}
+
+\clearpage
+\question
+The graph below shows the funtion
+\begin{align*}
+f(t) = 2t^2 + 4t - 2.
+\end{align*}
+Find the equation for the tangent line to this curve at the point $(-2,-2)$.  Sketch your result on the graph.
+
+\bigskip
+
+\begin{asy}
+size(7cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), mediumgray);
+    draw((i,-6)--(i,6), mediumgray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$f(x)$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (t, (2)*t^2 + 4*t - 2.0);
+}
+path g = graph(F, -3.2, 1.15, operator ..);
+draw(g);
+
+\end{asy}
+
+\end{questions}
+
+\end{document}

@@ -1,0 +1,88 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Retake 7B: Polynomials}}
+            \hfill Math 1110, Fall 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\begin{questions}
+
+\question
+Find $\left( x^3 + 1 \right) \div \left( x - 1 \right)$.  Remember to include the remainder term in your answer, if needed.
+
+\clearpage
+
+\question
+Consider the polynomial function.
+\begin{align*}
+f(x) = - x^4 - x^3 + x^2 + x
+\end{align*}
+
+\begin{parts}
+\part 
+Give the degree and the leading term.
+
+\vspace{\stretch{2}}
+
+\part 
+Factor the polynomial and give all its zeros.  In addition, give the multiplicity for each zero that you identify.
+
+\vspace{\stretch{6}}
+
+\part 
+Calculate the coordinates of one test point in between each pair of zeros you found on part (b).
+
+\vspace{\stretch{3}}
+
+\part 
+Graph the polynomial.
+
+\vspace{\stretch{1}}
+\begin{center}
+\begin{asy}
+size(8cm);
+for (int i = -10; i <= 10; ++i)
+	{
+    draw((-10,i)--(10,i), mediumgray);
+    draw((i,-10)--(i,10), mediumgray);
+    }
+\end{asy}
+\end{center}
+\vspace{\stretch{1}}
+
+\end{parts}
+
+\end{questions}
+
+\end{document}

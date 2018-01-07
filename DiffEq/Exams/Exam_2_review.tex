@@ -1,0 +1,71 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac, enumerate}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Differential equations exam21 review - SP 17}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Exam 2 review problems}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+
+\begin{questions}
+
+\question
+Consider the initial value problem
+\begin{align*}
+x^2 y^{\prime \prime} - 2xy^{\prime} + 2y = 0, \> y(1) = 3, \> y^{\prime}(1) = 1.
+\end{align*}
+
+\begin{parts}
+\part
+Use the theorem from class to show that this IVP is guaranteed to have a unique solution.  Find the largest interval $I$ where this solution is guaranteed to exist.
+
+\part
+Verify that the function $y_1 = x$ is a solution to the differential equation in this problem.
+
+\part
+Show the same thing for the function $y_2 = x^2$.
+
+\part
+Use the Wronskian to show that $y_1$ and $y_2$ are linearly independent.
+
+\part
+Assemble the general solution to this differential equation and then find the solution to the IVP.
+\end{parts}
+
+\question Describe the solutions to each boundary value problem.
+\begin{parts}
+\part
+$y^{\prime \prime} + 4y = 0, \> y(0) = 0, y \left( \dfrac{3 \pi}{4} \right) = 0$
+\part
+$y^{\prime \prime} + 4y = 0, \> y(0) = 0, y(\pi) = 0$
+\end{parts}
+
+\question
+A mass of 2 kilograms stretches a spring by a distance of 39.2 centimeters.  The system is suspended in a liquid that provides 12 newtons of resistance for every meter per second of velocity.  At time 0, the weight is in its equilibrium position.  It is struck with a hammer that gives it an instantaneous upward velocity of 8 meters per second.  Find the equation of motion for the mass.
+
+\question
+A mass of 1 kilogram is attached to a spring with spring constant $k = 5$ newtons per meter.  The system is subject to damping of 3 newtons for every meter per second of velocity.  The mass is driven by a motor that gives a force $f(t) = -4 \cos 5t$ at $t$ seconds.  When $t = 0$, the mass is at rest in its equilibrium position.  Find the equation of motion for the mass.  Identify the transient and the steady-state solutions.
+
+\end{questions}
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+
+\title{Worksheet template}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{gensymb, multicol, verbatim, enumitem, nicefrac}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\noindent {\sc {\bf {\Large Graphing functions}}}
+\bigskip
+\bigskip
+
+
+\bigskip
+
+\begin{enumerate}
+
+	\item $P(x) = x^{2/3} \left( x^2 - 4 \right)$
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+
+    \item $Q(x) = x^5 - 4x^3 + 4x - 1$
+    
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+
+\newpage
+
+	\item $R(x) = \dfrac{3x^2 - 12x}{x^2 - 2x - 3}$
+    
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,219 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Conditional probability}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Conditional probability}}
+            \hfill MAT 123, Summer 2016}
+\bigskip
+\bigskip
+
+We use the formula for conditional probability in two ways.
+\begin{gather*}
+P(A \> \vert B) = \dfrac{P(A \cap B)}{P(B)} \\
+P(A \cap B) = P(B) P(A \> \vert B)
+\end{gather*}
+
+\begin{questions}
+\question
+We have a jar with 5 blue chips and 6 yellow chips.  We draw two chips from the jar.  
+\begin{parts}
+\part
+What is the probability that the first chip is blue?  What is the probability that the first chip is yellow?
+
+\part
+If the first chip drawn is blue, what is the probability that the second chip is also blue?
+
+\part
+If the first chip is yellow, what is the probability that the second chip is blue?
+
+\part
+What is the probability of drawing two blue chips?
+
+\part
+What is the probability of drawing a yellow chip first and then a blue chip?
+
+\part
+What is the probability that the second chip is blue?
+
+\part
+What is the probability that the second chip is yellow? 
+
+\end{parts}
+
+\question
+We roll two dice.
+\begin{parts}
+\part
+What is the probability that the first die is a six?
+
+\part
+What is the probability that the sum of the two dice is greater than or equal to 10?
+
+\part
+If the first die is a six, what is the probability that the sum of the two dice is greater than or equal to 10?
+
+\part
+If the sum of the two dice is greater than 10, what is the probability that the first die is a six?
+
+\part
+What is the probability that the first die is six and the sum of the two dice is greater than or equal to 10?
+
+\end{parts}
+
+\question
+We flip a coin.  If the coin shows heads, we roll a die.  If the coin shows tails, we turn the die so that it reads 6.
+\begin{parts}
+\part
+What is the probability of getting heads on the coin?
+
+\part
+If the coin is heads, what is the probability of getting a 6 on the die?
+
+\part
+If the coin shows tails, what is the probability of getting a 6?
+
+\part
+What is the probability of getting heads and rolling a 6?
+
+\part
+What is the probability of getting tails and rolling a 6?
+
+\part
+What is the probability of getting a 6?
+
+\end{parts}
+
+\clearpage
+\question
+Two factories make parts for an automaker.  A part is equally likely to come from either of the factories.  Factory A has a defect rate of 1\%, and factory B has a defect rate of 4\%. 
+\begin{parts}
+\part
+What is the probability that a part was made in factory A?
+
+\part
+If a part was made in factory A, what is the probability that it is defective?
+
+\part
+If a part was made in factory B, what is the probability that it is defective?
+
+\part
+What is the probability that a part is defective and is made in factory A?
+
+\part
+What is the probability that a part is defective and is made in factory B?
+
+\part
+What is the probability that a part is defective?
+
+\part
+What is the probability that a part is not defective?
+
+\end{parts}
+
+\question
+An urn contains 5 blue chips, 3 white chips, and 7 red chips.  Two chips are drawn.
+
+\begin{parts}
+\part
+What is the probability that the first chip is blue?  White?  Red?
+
+\part
+If the first chip is blue, what is the probability that the second chip is blue?
+
+\part
+If the first chip is blue, what is the probability that the second chip is not blue?
+
+\part
+What is the probability that both chips are blue?
+
+\part
+What is the probability that both chips are the same color?
+
+\part
+What is the probability that the two chips are different colors?
+\end{parts}
+
+\end{questions}
+
+\bigskip
+\bigskip
+ANSWERS
+\begin{multicols}{3}
+\begin{questions}
+\question 
+\begin{parts}
+\part $\nicefrac{5}{11}$, $\nicefrac{6}{11}$
+\part $\nicefrac{2}{5}$
+\part $\nicefrac{1}{2}$
+\part $\nicefrac{2}{11}$
+\part $\nicefrac{3}{11}$
+\part $\nicefrac{5}{11}$
+\part $\nicefrac{6}{11}$
+\end{parts}
+
+\question 
+\begin{parts}
+\part $\nicefrac{1}{6}$
+\part $\nicefrac{1}{6}$
+\part $\nicefrac{1}{2}$
+\part $\nicefrac{1}{2}$
+\part $\nicefrac{1}{12}$
+\end{parts}
+
+\question 
+\begin{parts}
+\part $\nicefrac{1}{2}$
+\part $\nicefrac{1}{6}$
+\part 1
+\part $\nicefrac{1}{12}$
+\part $\nicefrac{1}{2}$
+\part $\nicefrac{7}{12}$
+\end{parts}
+
+\question 
+\begin{parts}
+\part $\nicefrac{1}{2}$
+\part 1\% or $\nicefrac{1}{100}$
+\part 4\% or $\nicefrac{1}{25}$
+\part $\nicefrac{1}{200}$
+\part $\nicefrac{1}{50}$
+\part $\nicefrac{1}{40}$
+\part $\nicefrac{39}{40}$
+\end{parts}
+
+\question 
+\begin{parts}
+\part $\nicefrac{1}{3}$, $\nicefrac{1}{5}$, $\nicefrac{7}{15}$
+\part $\nicefrac{2}{7}$
+\part $\nicefrac{5}{7}$
+\part $\nicefrac{2}{21}$
+\part $\nicefrac{34}{105}$
+\part $\nicefrac{71}{105}$
+\end{parts}
+
+\end{questions}
+\end{multicols}
+
+\end{document}

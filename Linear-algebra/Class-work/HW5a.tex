@@ -1,0 +1,80 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath, amssymb, color,graphicx, multicol, gensymb, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Linear algebra homework template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Homework 5a}}
+            \hfill MAT 255, Fall 2016}
+\bigskip
+\bigskip
+\smallskip
+
+\begin{questions}
+
+\question
+Let $\mathbf{u}, \mathbf{v}$ be vectors in $\mathbb{R}^n$.  
+Prove that $\mathbf{u} - \mathbf{v} = \mathbf{0}$ if and only if $\mathbf{u} = \mathbf{v}$.
+
+\question
+Classify the following transformations as linear or nonlinear.  Provide the necessary support for your answer.  On all of these problems, we assume the vector $\mathbf{v}$ has components
+\begin{equation*}
+	\mathbf{v} = \left[ 
+    \begin{array}{c}
+		v_1 \\ v_2
+	\end{array}
+    \right] .
+\end{equation*}
+
+\bigskip
+\bigskip
+\begin{parts}
+\begin{multicols}{2}
+\part
+$T(\mathbf{v}) = \left[ 
+    \begin{array}{c}
+		v_2 \\ v_1
+	\end{array}
+    \right]$
+
+\part
+$T(\mathbf{v}) = \left[ 
+    \begin{array}{c}
+		0 \\ 1
+	\end{array}
+    \right]$
+
+\columnbreak
+\part
+$T(\mathbf{v}) = v_1 + v_2$
+
+\part
+$T(\mathbf{v}) = v_1  v_2$
+
+\end{multicols}
+\end{parts}
+\end{questions}
+
+\end{document}

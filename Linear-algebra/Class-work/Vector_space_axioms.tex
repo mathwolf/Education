@@ -1,0 +1,72 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, amssymb}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\newcommand{\real}{\mathbf{R}}
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+\newcommand{\poly}{\mathbf{P}}
+
+\title{Axioms for a vector space}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Axioms for a vector space}}}
+\bigskip
+\bigskip
+
+In the following, we assume that $\vec{u}, \vec{v}$, and $\vec{w}$ are any vectors in the vector space $V$ and that $c$ and $d$ are any scalars.   
+\begin{questions}
+
+\question
+$\vec{u} + \vec{v} = \vec{v} + \vec{u}$
+
+\question
+$(\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w})$
+
+\question
+There exists a vector $\vec{0}$ in $V$ such that
+\begin{equation*}
+	\vec{v} + \vec{0} = \vec{v}
+\end{equation*}
+for every vector $\vec{v}$.
+
+\question
+For every vector $\vec{u}$ in the space there is an additive inverse, denoted $-\vec{u}$, such that
+\begin{equation*}
+	\vec{u} + -\vec{u} = \vec{0}.
+\end{equation*}
+
+\question
+$c(\vec{u} + \vec{v}) = c \vec{u} + c \vec{v}$
+
+\question
+$(c + d) \vec{u} = c \vec{u} + d \vec{u}$
+
+\question
+$c (d \vec{u}) = (cd) \vec{u}$
+
+\question
+$1 \vec{u} = \vec{u}$
+
+\end{questions}
+
+\end{document}

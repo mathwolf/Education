@@ -1,0 +1,116 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac, enumerate}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Differential equations exam 1 review - SP 17}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Exam 1 review problems}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+\bigskip
+
+In addition to the review questions below, make sure that you understand all of the problems from Quiz 2 through Quiz 5.
+
+\begin{questions}
+
+\question
+Classify each differential equation as linear or non-linear.  Then determine which solution methods apply to each problem.
+\begin{multicols}{2}
+\begin{parts}
+\part 
+$\dfrac{dy}{dt} = (1 + y)(1 - y)$
+
+\part
+$\dfrac{dy}{dt} = \dfrac{y}{t \, \ln t}$
+
+\part
+$\dfrac{dy}{dt} = 1 - y$
+
+\part
+$\dfrac{dy}{dt} = y (1 - y)$
+
+\end{parts}
+\end{multicols}
+
+\question
+Consider an experiment in which we drop a ball from rest off a tall building.  Start with the assumption that the ball's velocity is determined only by gravity.  Near the surface of the Earth, acceleration due to gravity is constant, with the approximate value
+\begin{align*}
+g = 9.8 \mbox{ m/s.}
+\end{align*}
+Write a differential equation that models the velocity of the ball in these circumstances.  Then solve the resulting IVP.
+
+\question
+Next, we modify the last question to include air resistance.  Assume that acceleration due to air resistance is proportional to the current velocity of the ball.  
+\begin{parts}
+\part
+Suppose that the constant of proportionality for air resistance has magnitude $\rho = 0.5$.  Write a modified version of your equation from the last problem that incorporates the new assumption.  Make sure to think about the sign of the terms in this equation.
+
+\part
+Solve the IVP you created in the last step.
+
+\part
+Find the limit of the velocity as time goes to infinity, called terminal velocity.
+
+\end{parts}
+
+\question
+Based on the theorem used in class, are we guaranteed to find a unique solution to the following IVPs?
+\begin{multicols}{2}
+\begin{parts}
+\part
+$\dfrac{dy}{dx} = \sqrt{x - y}, \> y(0) = 2$
+
+\part
+$\dfrac{dy}{dx} = \sqrt{x - y}, \> y(1) = 1$
+
+\part
+$\dfrac{dy}{dx} = \sqrt{y}, \> y(1) = 0$
+
+\part
+$\dfrac{dy}{dx} = \sqrt{x}, \> y(1) = 0$
+
+\end{parts}
+\end{multicols}
+
+\question
+Solve each differential equation or IVP.
+\begin{parts}
+\part
+$\dfrac{dy}{dx} = 6x \left( y - 2 \right)^2, \> y(0) = 2$
+
+\part
+$\left( 1+x \right) y^{\prime} + y = \cos x, \> y(0) = 1$
+
+\part
+$\left( 3x^2 + 2y^2 \right) dx + \left( 4xy + 6y^2 \right) dy = 0$
+
+\part
+$x^2 y^{\prime} + 2xy = 5y^4$
+
+\part
+$x^2 y^{\prime} = xy + x^2 e^{y/x}$
+
+\end{parts}
+
+\end{questions}
+\end{document}

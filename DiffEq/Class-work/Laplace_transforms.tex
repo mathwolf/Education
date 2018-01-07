@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+
+\title{Worksheet template}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{gensymb, multicol, verbatim, enumitem, nicefrac}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\noindent {\sc {\bf {\Large Laplace transforms}}}
+\bigskip
+\bigskip
+
+Use the Laplace transform to solve the following IVPs.
+
+\begin{enumerate}
+
+\item
+$y^{\prime \prime}- y^{\prime} - 6y = 0, \> y(0) = 2, \> y^{\prime}(0) = -1$
+
+\item
+$y^{\prime \prime} + 4y^{\prime} + 4y = t^2, \> y(0) = 0, \> y^{\prime}(0) = 0$
+
+\item
+$y^{\prime \prime} + y = \sqrt{2} \> \sin \left( \sqrt{2} \> t \right), \> y(0) = 10, \> y^{\prime}(0) = 0$
+
+\end{enumerate}
+
+\bigskip
+
+\newpage
+
+ANSWERS
+
+\begin{enumerate}
+	\item $y(t) = \dfrac{3}{5} e^{3t} + \dfrac{7}{5} e^{-2t}$
+	\item $y(t) = \dfrac{1}{4} t^2 - \dfrac{1}{2} t + \dfrac{3}{8} - \dfrac{1}{4} t e^{-2t} 
+    	- \dfrac{3}{8} e^{-2t}$
+	\item $y(x) = 10 \cos t + 2 \sin t - \sqrt{2} \> \sin \left( \sqrt{2} \> t \right)$
+\end{enumerate}
+
+\end{document}

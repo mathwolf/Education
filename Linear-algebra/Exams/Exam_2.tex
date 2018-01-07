@@ -1,0 +1,162 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac, gensymb}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\newcommand{\real}{\mathbf{R}}
+
+\title{Linear algebra exam 2}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Exam 2}}
+            \hfill MAT 255, Fall 2016}
+\bigskip
+\bigskip
+
+Please start each question at the top of a new page.
+\bigskip
+
+\begin{questions}
+
+\question[7]
+Find the determinant of the matrix 
+$\left[ \begin{array}{ccc}
+1 - x & 1 & 0 \\
+1 & 1 - x & 1 \\
+0 & 1 & 1 - x \\
+\end{array} \right]$.
+
+\smallskip
+
+\question[5]
+Find all values of $k$ such that the matrix 
+$\left[ \begin{array}{cc}
+k^2 & k \\ 1 & k \\
+\end{array} \right]$
+is invertible.
+
+\question[10]
+Let $H$ be the set consisting of all vectors in $\real^2$ that have the form 
+$\left[ \begin{array}{c}
+	2t \\ -t
+\end{array} \right]$ where $t$ is a \textbf{non-negative} real number.  Is $H$ is a subspace of $\real^2$?  Justify your answer.
+
+\question[15]
+Determine if each of the following sets is a basis for $\real^2$.  Explain the reasons for your conclusions.
+
+\begin{parts}
+\part
+$\left\lbrace \left[
+\begin{array}{c}
+5 \\ 1 
+\end{array}
+\right], 
+\left[
+\begin{array}{c}
+0 \\ 0 
+\end{array}
+\right]
+\right\rbrace$
+
+\part
+$\left\lbrace \left[
+\begin{array}{c}
+3 \\ -1 
+\end{array}
+\right], 
+\left[
+\begin{array}{c}
+2 \\ 2 
+\end{array}
+\right]
+\right\rbrace$
+
+\part
+$\left\lbrace \left[
+\begin{array}{c}
+1 \\ 0 
+\end{array}
+\right], 
+\left[
+\begin{array}{c}
+1 \\ -2 
+\end{array}
+\right],
+\left[
+\begin{array}{c}
+0 \\ 11 
+\end{array}
+\right]
+\right\rbrace$
+
+\part
+$\left\lbrace \left[
+\begin{array}{c}
+15 \\ 5 
+\end{array}
+\right], 
+\left[
+\begin{array}{c}
+-6 \\ -2 
+\end{array}
+\right]
+\right\rbrace$
+\end{parts}
+
+\question[10]
+Are the polynomials
+\begin{align*}
+	2 + 4t^3 && 3 + 6t + 6t^3 \\
+    4 + 7t + 8t^3 && 1 + 9t^2 + 2t^3
+\end{align*}
+linearly independent? 
+
+\question[18]
+Find a basis set for the nullspace, columnspace, and rowspace of the matrix
+\begin{equation*}
+	A = \left[ \begin{array}{ccccc}
+		1 & 2 & 3 & 4 \\
+		6 & 13 & 20 & 27 \\
+		9 & 26 & 44 & 62 \\
+	\end{array} \right].
+\end{equation*}
+What is the rank of the matrix $A$?
+
+\clearpage
+
+\question[15]
+Suppose that $A$ is a $4 \times 7$ matrix with four pivot columns.  What is the rank of this matrix? Give the dimensions for the nullspace, rowspace, and columnspace.  Is $\textnormal{Null}(A)$ the same as the entire space $\real^m$ for some integer $m$? Is $\textnormal{Col}(A) = \real^n$ for some integer $n$?  Does the equation
+\begin{align*}
+A \vec{x} = \vec{b}
+\end{align*}
+have a solution for every possible right-hand side vector $\vec{b}$?  Does the equation
+\begin{align*}
+A \vec{x} = \vec{0}
+\end{align*}
+have a solution other than the trivial solution $\vec{x} = \vec{0}$?
+
+\question[20]
+Let $V$ be a vector space, and let $\vec{u}$ be any vector in $V$.  Prove that the additive inverse $-\vec{u}$ is unique.  You will be graded on both the clarity of your writing and the correctness of your argument.
+
+
+\end{questions}
+
+\end{document}

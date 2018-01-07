@@ -1,0 +1,75 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Worksheet template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\smallskip
+\begin{questions}
+
+\question
+Consider the initial value problem
+\begin{align*}
+	y^{\prime} \ + y = x + 1, \> y(0) = 0
+\end{align*}
+Is this problem guaranteed to have a unique solution?
+
+\bigskip
+
+\question
+Consider the initial value problem
+\begin{align*}
+	y^{\prime} x = 2y, \> y(0) = 1.
+\end{align*}
+Is this problem guaranteed to have a unique solution?
+
+\bigskip
+
+\question
+Consider the initial value problem
+\begin{align*}
+	y^{\prime} - y^2 - 1 = 0, \> y(0) = 0
+\end{align*}
+Is this problem guaranteed to have a unique solution?
+
+\bigskip
+
+\question
+Consider the initial value problem
+\begin{align*}
+	y^{\prime} = 2 \sqrt{ \lvert y \rvert }, \> y(0) = 0.
+\end{align*}
+
+\begin{parts}
+\part
+Show that the function $y(x) = 0$ is a solution to the IVP.
+
+\part
+Show that the function $y(x) = x \lvert x \rvert$ is a solution to the IVP.
+
+\part
+The previous two parts show that this problem does not have a unique solution.  (It has two.)  Explain why this result is consistent with the existence and uniqueness theorem that we discussed in class.
+\end{parts}
+
+\end{questions}
+\end{document}

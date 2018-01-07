@@ -1,0 +1,80 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath, amssymb, color,graphicx, multicol, gensymb, nicefrac}
+\usepackage[inline]{asymptote}
+
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+\newcommand{\real}{\mathbb{R}}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Linear algebra homework template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Homework 5b}}
+            \hfill MAT 255, Fall 2016}
+\bigskip
+\bigskip
+\smallskip
+
+\begin{questions}
+
+\question
+Let $A$ be an $\ell \times m$ matrix, and let $B,C$ be $m \times n$ matrices.  Show that $A(B+C) = AB + AC$.
+
+\question
+Let $A$ be an $\ell \times m$ matrix, and let $B$ be an $m \times n$ matrix.  Show that $(AB)^T = B^T A^T$.
+
+\question
+Let $A,B,C$ be matrices.  Suppose that $AB = AC$ and that the matrix $A$ is invertible.  What assumptions are necessary about the sizes of the matrices in order for these statements to hold?  Show the steps we use to conclude that $B = C$.
+
+\question
+Let $A$ be a $2 \times 2$ matrix with entries
+\begin{equation*}
+\left[ \begin{array}{cc}
+a & b \\
+c & d
+\end{array}
+\right].
+\end{equation*}
+Prove that $A$ has an inverse if and only if $ad - bc \ne 0$.  You will use the following ideas in your proof.
+\begin{parts}
+\part
+If $ad - bc = 0$, then the equation $A \vec{x} = \vec{0}$ has more than one solution.  First, consider the case when $a = b = 0$.  Next, look at the case where $a$ and $b$ are not both $0$.
+\part
+If $ad - bc \ne 0$, then the matrix
+\begin{equation*} \dfrac{1}{ad-bc}
+\left[ \begin{array}{cc}
+d & -b \\
+-c & a
+\end{array}
+\right]
+\end{equation*}
+satisfies the definition of an inverse.
+\end{parts}
+
+\question
+Suppose $T: \real^n \to \real^n$ is a linear transformation with the property that there are distinct vectors $\vec{u}, \vec{v}$ in $\real^n$ such that $T(\vec{u}) = T(\vec{v})$.  Is $T$ an onto transformation?  Justify your answer.
+
+\end{questions}
+
+\end{document}

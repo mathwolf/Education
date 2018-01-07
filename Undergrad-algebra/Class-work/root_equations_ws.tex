@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+
+\title{Worksheet template}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{gensymb, multicol, verbatim, enumitem, nicefrac}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\noindent {\sc {\bf {\Large Solving equations with square roots}}}
+\bigskip
+\bigskip
+
+Review.  Find the vertex of the parabola.
+\begin{enumerate}
+	\item $y = x^2 - 3x + $ {\Large $\frac{1}{4}$}
+\end{enumerate}
+
+\bigskip
+
+Solve the equation.
+
+\begin{enumerate}[resume]    
+    \item $\sqrt{4x + 1} = 3$
+    \item $\sqrt{y-5} - 3 = 2$
+    \item $\sqrt{x+1} + 1 = x$
+    \item $\sqrt{x+3} - 1 = x$
+    \item $\sqrt{x} - \sqrt{x-5} = 1$
+\end{enumerate}
+
+\bigskip
+
+Determine the domain of each function and then graph it.
+
+\begin{enumerate}[resume]
+	\item $f(x) = \sqrt{x+2}$ \\
+    
+    \begin{flushright}
+	\begin{asy}
+	size(6cm);
+	for (int i = -5; i <= 5; ++i)
+	{
+    	draw((-5,i)--(5,i), mediumgray);
+	    draw((i,-5)--(i,5), mediumgray);
+    }
+	draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+	draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+	\end{asy}
+	\end{flushright}
+
+	\item $f(x) = \sqrt{x-2} + 1$ \\
+    
+    \begin{flushright}
+	\begin{asy}
+	size(6cm);
+	for (int i = -5; i <= 5; ++i)
+	{
+    	draw((-5,i)--(5,i), mediumgray);
+	    draw((i,-5)--(i,5), mediumgray);
+    }
+	draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+	draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+	\end{asy}
+	\end{flushright}
+
+\end{enumerate}
+
+\newpage
+
+ANSWERS
+
+\begin{multicols}{2}
+\begin{enumerate}
+	\item $\left( \nicefrac{3}{2} ,-2 \right)$
+    \item $x = 2$
+    \item $y = 20$
+    \item $x = 3$
+    \item $x = 1$
+    \item $x = 9$
+	\item Domain: $\left[ -2, \infty \right)$
+	\item Domain: $\left[ 2, \infty \right)$
+    
+\end{enumerate}
+\end{multicols}
+\end{document}

@@ -1,0 +1,109 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage[inline]{asymptote}
+\usepackage{amsmath, gensymb, nicefrac, verbatim, graphicx, multicol}
+\usepackage[export]{adjustbox}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\title{Linear Exam 1 part 1 - Fall 2016}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Exam 1, part 1}}
+            \hfill MAT 255, Fall 2016}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+Solve the following problems without using a calculator.
+
+\begin{questions}
+
+\question[15]
+Solve the system using Gaussian elimination.  Describe the row operation you are using at each step.  (Other methods of solving this problem will not be given credit.)
+\begin{gather*}
+	2x + y + z = 22 \\
+    x - y = 11 \\
+    y - z = -4
+\end{gather*}
+
+\clearpage
+\question[10]
+Define the following matrices.
+\begin{align*}
+A & = \left[ \begin{array}{c}
+	4 \\ 2 \\ 6
+\end{array}
+\right]
+& B & = \left[ \begin{array}{cc}
+	-1 & 1 \\ 
+    2 & 0
+\end{array}
+\right] 
+& C & = \left[ \begin{array}{ccc}
+	-6 & 3 & -3
+\end{array}
+\right] 
+& D & = \left[ \begin{array}{ccc}
+	-5 & 4 & 7 \\ 
+    -1 & 3 & 6
+\end{array}
+\right]
+\end{align*}
+\bigskip
+\begin{parts}
+\part
+Based on these definitions, describe each of the following products as defined or undefined.
+\renewcommand{\labelenumi}{\roman{enumi}.}
+\begin{multicols}{2}
+\begin{enumerate}
+\item $DA$
+\bigskip
+\bigskip
+\item $DC$
+\bigskip
+\bigskip
+\item $BD$
+\bigskip
+\bigskip
+\columnbreak
+\item $DB$
+\bigskip
+\bigskip
+\item $AC$
+\bigskip
+\bigskip
+\item $CA$
+\bigskip
+\bigskip
+\end{enumerate}
+\end{multicols}
+\bigskip
+\bigskip
+
+\part
+Choose ONE of the answers from part (a) that you said was defined.  Calculate the matrix product.
+\vspace{\stretch{2}}
+\end{parts}
+
+\end{questions}
+
+\end{document}

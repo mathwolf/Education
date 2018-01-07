@@ -1,0 +1,63 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Retake 3}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+Evaluate each limit.  For full credit, please show your work and explain the reasons that lead to your answer.
+\begin{questions}
+
+\question[5]
+$\displaystyle \lim_{x \to 0} \dfrac{x^4 - 16}{x^2 - 4}$
+\vspace{\stretch{3}}
+
+\question[5]
+$\displaystyle \lim_{x \to \infty} \dfrac{x^4 - x + 1}{3x^5 + 4}$
+\vspace{\stretch{3}}
+
+\clearpage
+
+\question[5]
+$\displaystyle \lim_{x \to -2} \left( x^3 + 1 \right)$
+\vspace{\stretch{2}}
+
+\question[5]
+$\displaystyle \lim_{x \to 5} \dfrac{\sqrt{x} - 5}{x - 25}$
+\vspace{\stretch{2}}
+
+
+\end{questions}
+\end{document}

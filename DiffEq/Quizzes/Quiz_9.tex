@@ -1,0 +1,62 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\newcommand{\laplace}[1]{\mathcal{L} \left\lbrace #1 \right\rbrace}
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Quiz 9}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+
+\begin{questions}
+
+\question[10]
+Find the Laplace transform of the function
+\begin{align*} f(t) =
+	\begin{cases}
+		\cos \pi t & \mbox{if } 0 \le t <2, \\
+        0 & \mbox{if } t \ge 2.
+	\end{cases}
+\end{align*}
+
+\clearpage
+
+\question[10]
+Find the inverse Laplace transform of 
+\begin{align*}
+	F(s) = \dfrac{e^{-s} - e^{-3s}}{s^2}.
+\end{align*}
+
+\end{questions}
+
+\end{document}

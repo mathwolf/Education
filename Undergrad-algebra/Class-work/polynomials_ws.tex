@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+
+\title{Worksheet template}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage[inline]{asymptote}
+\usepackage{gensymb, multicol, verbatim, enumitem, nicefrac}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\noindent {\sc {\bf {\Large Polynomial functions}}}
+\bigskip
+\bigskip
+
+Factor the function completely.  Use synthetic division to check the possible zeros.
+
+\begin{enumerate}
+	\item $g(x) = x^3 - x^2 - 4x + 4$
+ 	\item $h(x) = x^3 - x^2$
+    \item $j(x) = 2x^4 - 6x^3 - 56x^2 + 120x$
+    \item $f(x) = x^3 + 7x^2 + 12x$
+    \item $g(x) = x^4 - 4x^3 + 4x^2$
+\end{enumerate}
+
+Sketch the graph of each polynomial function.
+
+\bigskip
+
+\begin{enumerate}
+\setcounter{enumi}{5}
+
+	\item $P(x) = -4x^3 + 12x^2 - 8x$
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+
+    \item $Q(x) = x^4 - 2x^3 - x^2 + 2x$
+    
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+
+\newpage
+
+	\item $R(x) = x^5 - x^4$
+    
+	\begin{flushright}
+	\begin{asy}
+	size(7cm);
+	for (int i = -7; i <= 7; ++i)
+	{
+    	draw((-7,i)--(7,i), mediumgray);
+	    draw((i,-7)--(i,7), mediumgray);
+    }
+	\end{asy}
+	\end{flushright}
+
+\end{enumerate}
+
+ANSWERS
+
+\begin{multicols}{2}
+\begin{enumerate}
+	\item $(x-1)(x-2)(x+2)$
+    \item $x^2 (x-1)$
+    \item $2x(x-2)(x+5)(x-6)$
+    \item $x(x+3)(x+4)$
+    \item $x^2 (x-2)^2$
+\end{enumerate}
+\end{multicols}
+\end{document}

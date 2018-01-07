@@ -1,0 +1,161 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Calculus exam 2 review}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+\noindent {\sc {\bf {\Large Exam 2 review}}
+            \hfill MAT 201, Spring 2017}
+\bigskip
+\bigskip
+
+\smallskip
+
+In addition to the worksheets discussed on D2L, you should review the following questions.
+
+\bigskip
+
+Use the definition of the derivative to find the derivatives of three kinds of functions.
+\begin{questions}
+\question
+Polynomial: $f(x) = 5 - 2x^2$
+
+\question
+Square root: $g(x) = \sqrt{2x + 3}$
+
+\question
+Rational: $h(x) = \dfrac{1}{x - 1}$
+\end{questions}
+
+\bigskip
+Sketch the derivative of each graph shown below.
+
+\begin{questions}
+\setcounter{question}{3}
+\question
+\hspace{1pt}
+
+\begin{asy}
+size(7cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), mediumgray);
+    draw((i,-6)--(i,6), mediumgray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$f(x)$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (t, 0.019*(2*t^4 - t^3 - 38*t^2 - 41*t + 30));
+}
+path g = graph(F, -4.3, 5.4, operator ..);
+draw(g);
+
+\end{asy}
+\vspace{\stretch{1}}
+
+\question
+\hspace{1pt}
+
+\begin{asy}
+size(7cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), mediumgray);
+    draw((i,-6)--(i,6), mediumgray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$f(x)$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (t, (1 - 2.0*t)/(t - 1));
+}
+path g = graph(F, -5.7, 0.87, operator ..);
+draw(g);
+path h = graph(F, 1.26, 5.8, operator ..);
+draw(h);
+
+\end{asy}
+\vspace{\stretch{2}}
+\clearpage
+
+\question
+\hspace{1pt}
+
+\begin{asy}
+size(7cm);
+import graph;
+for (int i = -6; i <= 6; ++i)
+	{
+    draw((-6,i)--(6,i), mediumgray);
+    draw((i,-6)--(i,6), mediumgray);
+    }
+draw(Label("$x$", EndPoint, E), (-7,0)--(7,0), Arrows);
+draw(Label("$f(x)$", EndPoint, N), (0,-7)--(0,7), Arrows);
+pair F(real t) { 
+	return (t, (2)*t^2 + 4*t - 2.0);
+}
+pair G(real t) { 
+	return (t, -1.0*t + 5);
+}
+path g = graph(F, -3.2, 1.0, operator ..);
+draw(g);
+path h = graph(G, 1.0, 5.75, operator ..);
+draw(h);
+
+\end{asy}
+\vspace{\stretch{2}}
+
+\question
+A group of engineers is observing an experimental aircraft.  After $t$ seconds, the height (in feet) of the aircraft above the ground is given by the function
+\begin{gather*}
+	h(t) = -5t^3 + 30t^2 - 45t.
+\end{gather*}
+
+\begin{parts}
+\part
+How high is the aircraft when the observations begin (at time $t=0$)?
+
+\vspace{\stretch{1}}
+
+\part
+Give functions $v(t)$ and $a(t)$ that describe the velocity and acceleration of the aircraft at time $t$.
+\vspace{\stretch{1}}
+
+\part
+When does the aircraft hit the ground?  What is its velocity when this happens?
+\vspace{\stretch{1}}
+
+\part
+Find the maximum height of the aircraft.
+\vspace{\stretch{1}}
+
+\part
+Find the time when the aircraft experiences no acceleration.
+\vspace{\stretch{6}}
+
+\end{parts}
+
+\end{questions}
+\end{document}

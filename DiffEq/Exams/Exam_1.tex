@@ -1,0 +1,119 @@
+\documentclass[12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac, enumerate}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Differential equations exam 1 - SP 17}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+\noindent {\sc {\bf {\Large Exam 1}}
+            \hfill MAT 265, Spring 2017}
+\bigskip
+\bigskip
+
+\begin{questions}
+
+\question[10]
+Recall that acceleration is defined as the rate of change in velocity.  Suppose that the acceleration of a motorboat is proportional to the difference between 50 km/h and the boat's velocity.  Write a differential equation that models this situation.  Then find the general solution of your equation.
+
+\vspace{\stretch{4}}
+
+\question[10]
+Use the theorem from class to discuss the existence and uniqueness of solutions to the following IVPs.
+\begin{parts}
+\part
+$\dfrac{dy}{dx} = \sqrt{1 - y}, \> y(0) = 2$
+
+\vspace{\stretch{2}}
+
+\part
+$\dfrac{dy}{dx} = \sqrt{1 - x}, \> y(0) = 2$
+\end{parts}
+
+\vspace{\stretch{3}}
+
+\clearpage
+
+\question
+Solve the differential equation or IVP.
+\begin{parts}
+\part[12]
+$\left( 3x^2 + 2y^2 \right) dx + \left( 4xy + 6y^2 \right) dy = 0$
+
+\clearpage
+
+\part[13]
+$y^{\prime} + \dfrac{3}{t} y = \dfrac{\sin t}{t^2}, \> t>0, \> y(1) = \sin 1$
+
+
+\clearpage
+
+\part[20]
+$ty^{\prime} + y = t \ln \left( t \right) y^2, \> t>0, \> y(1) = \dfrac{1}{2}$ 
+
+\end{parts}
+
+\clearpage
+
+\question
+In class we discussed the logistic model for population growth.  We could also add the assumption that a minimum size is necessary to maintain a healthy population.  This leads to the revised model
+\begin{align*}
+\dfrac{dP}{dt} = k P \left( 1 - \dfrac{P}{M} \right) \left( 1 - \dfrac{m}{P} \right).
+\end{align*}
+We consider a population with parameters $k = \dfrac{1}{4}, M = 100,$ and $m = 20$.
+
+\begin{parts}
+\part[5]
+Show that the equation with these parameters is equivalent to 
+\begin{align*}
+\dfrac{dP}{dt} = \dfrac{1}{400} \left( 100 - P \right) \left( P - 20 \right).
+\end{align*}
+
+\vspace{\stretch{1}}
+
+\part[10]
+Draw the phase portrait for this equation and describe the stability of each critical point.
+
+\vspace{\stretch{3}}
+
+\part[5]
+Make a graph that shows the equilibrium solutions that you identified in part (b).  On the same graph, sketch solution curves for the initial conditions $y(0) = 15, \> y(0) = 45, \> y(0) = 75,$ and $y(0) = 115$.
+
+\vspace{\stretch{3}}
+
+\part[5]
+For what initial values will the population go extinct?
+
+\vspace{\stretch{2}}
+
+\clearpage
+
+\part[10]
+Solve the IVP
+\begin{align*}
+	\dfrac{dP}{dt} = \dfrac{1}{400} \left( 100 - P \right) \left( P - 20 \right), \> P(0) = 50.
+\end{align*}
+You can leave your solution in implicit form.
+
+\end{parts}
+
+\end{questions}
+\end{document}

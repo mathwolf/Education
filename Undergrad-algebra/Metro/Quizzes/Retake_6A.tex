@@ -1,0 +1,151 @@
+\documentclass[addpoints, 12pt]{exam}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.25in}
+
+\usepackage{amsmath,color,graphicx, multicol, nicefrac}
+\usepackage[inline]{asymptote}
+
+\nofiles
+
+\setlength{\parindent}{0in}
+
+\pagestyle{plain}
+
+\title{Quiz template}
+\author{Wray}
+\begin{document}
+
+\begin{asydef}
+//
+// Global Asymptote definitions can be put here.
+//
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+\end{asydef}
+
+
+
+\noindent {\sc {\bf {\Large Retake 6A: Graphs and geometry}}
+            \hfill Math 1110, Fall 2017}
+\bigskip
+
+\noindent {\sc  {\large Name:}
+             \hfill}
+             
+\bigskip
+\bigskip
+
+\smallskip
+
+Graph each of the functions.  Your graph should show the correct shape and the coordinates of the two or three  points that are easy to find.
+
+\begin{questions}
+
+\begin{multicols}{2}
+\question[3]
+$f(x) = x^{3}$
+
+\vspace{\stretch{1}}
+
+\begin{asy}
+size(7cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), gray);
+    draw((i,-5)--(i,5), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+\end{asy}
+
+\vspace{\stretch{1}}
+
+\question[3]
+$f(x) = (x+2)^{3}$
+
+\vspace{\stretch{1}}
+
+\begin{asy}
+size(7cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), gray);
+    draw((i,-5)--(i,5), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+\end{asy}
+
+\vspace{\stretch{1}}
+
+\end{multicols} 
+
+\vspace{\stretch{2}}
+
+\begin{multicols}{2}
+\question[3]
+$f(x) = x^{\nicefrac{1}{4}}$
+
+\vspace{\stretch{1}}
+
+\begin{asy}
+size(7cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), gray);
+    draw((i,-5)--(i,5), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+\end{asy}
+
+\vspace{\stretch{1}}
+
+\question[3]
+$f(x) = - x^{-2} - 3$
+
+\vspace{\stretch{1}}
+
+\begin{asy}
+size(7cm);
+import graph;
+for (int i = -5; i <= 5; ++i)
+	{
+    draw((-5,i)--(5,i), gray);
+    draw((i,-5)--(i,5), gray);
+    }
+draw(Label("$x$", EndPoint, E), (-6,0)--(6,0), Arrows);
+draw(Label("$y$", EndPoint, N), (0,-6)--(0,6), Arrows);
+\end{asy}
+
+\vspace{\stretch{1}}
+
+\end{multicols} 
+
+\vspace{\stretch{3}}
+\newpage 
+
+\question[8]
+A garden is constructed in the shape of a right triangle.  The legs of the triangle have lengths 20 feet and $x$ feet.  Find a function that expresses the area of the garden as a function of $x$. \newline
+\bigskip
+\bigskip
+\vspace{\stretch{1}}
+\begin{asy}
+size(5cm);
+draw((0,0) -- (0,7), white);
+draw(Label("$x$", MidPoint, 2*SW + W), (0,0)--(0,5), linewidth(1.5bp));
+draw(Label("$20$", MidPoint, 2*S), (0,0)--(2*sqrt(6),0), linewidth(1.5bp));
+draw( (0,5)--(2*sqrt(6),0), linewidth(1.5bp));
+
+draw(box((0,0), (0.5,0.5)));
+\end{asy}
+
+\vspace{\stretch{8}}
+
+\end{questions}
+
+\end{document}
